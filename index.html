@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="TemplateMo">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <title>App Creation</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+</head>
+
+<body>
+
+  <!-- Sub Header -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                APP CREATION
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                <li class="scroll-to-section"><a href="#courses">Courses</a></li>
+                <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+              </ul>
+              <a class='menu-trigger'>
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+<section class="section main-banner" id="top" data-section="section1">
+  <video autoplay muted loop id="bg-video">
+      <source src="assets/images/course-video.mp4" type="video/mp4" />
+  </video>
+
+  <div class="video-overlay header-text">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="caption">
+                      <h6>Hello Students, Welcome to</h6>
+                      <h2>No 1 Online Learning Platform</h2>
+                      <p>Step-by-step iOS and Android development tutorials to build powerful mobile apps</p>
+                      <div class="main-button-red">
+                          <a href="https://wa.me/917780518732?text=Hello%2C%20I%20want%20to%20join!" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s" target="_blank">Join Now</a>
+                      </div>
+                      <div class="main-button-red mt-3">
+                          <a href="javascript:void(0);" class="btn hero-btn" onclick="openPopup()">Click for Class Standard</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Popup Modal -->
+<div id="imagePopup" class="popup-overlay">
+  <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <img src="assets/images/popup.png" alt="Class Standard" class="popup-img">
+  </div>
+</div>
+
+<!-- CSS for Popup -->
+<style>
+  /* Popup Background */
+  .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+  }
+
+  /* Popup Box */
+  .popup-content {
+      position: relative;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 90%;
+      width: 450px;
+      animation: fadeIn 0.3s ease-in-out;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Popup Image */
+  .popup-img {
+      width: 100%;
+      border-radius: 10px;
+      max-height: 400px;
+      object-fit: contain;
+  }
+
+  /* Close Button */
+  .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 25px;
+      cursor: pointer;
+      color: #555;
+  }
+
+  .close-btn:hover {
+      color: red;
+  }
+
+  /* Fade-in animation */
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: scale(0.9);
+      }
+      to {
+          opacity: 1;
+          transform: scale(1);
+      }
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 500px) {
+      .popup-content {
+          width: 90%;
+          padding: 15px;
+      }
+
+      .popup-img {
+          max-height: 300px;
+      }
+  }
+</style>
+
+<!-- JavaScript for Popup -->
+<script>
+  function openPopup() {
+      document.getElementById("imagePopup").style.display = "flex";
+  }
+
+  function closePopup() {
+      document.getElementById("imagePopup").style.display = "none";
+  }
+</script>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="course-contents">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Course Content</h2>
+          </div>
+        </div>
+
+        <!-- iOS Development Course Content -->
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+          <div class="course-item">
+            <div class="thumb mb-3">
+              <a href="https://www.youtube.com/watch?v=your_ios_video_link" target="_blank">
+                <img src="assets/images/yt1.png" alt="iOS Course Thumbnail" class="img-fluid">
+              </a>
+            </div>
+            <div class="down-content">
+              <h4>iOS Development - Swift Mastery</h4>
+              <br><a href="https://www.youtube.com/watch?v=your_ios_video_link" class="btn btn-primary" target="_blank">Watch the Course</a></br>
+            </div>
+          </div>
+        </div>
+
+        <!-- Android Development Course Content -->
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+          <div class="course-item">
+            <div class="thumb mb-3">
+              <a href="https://www.youtube.com/watch?v=your_android_video_link" target="_blank">
+                <img src="assets/images/yt2.png" alt="Android Course Thumbnail" class="img-fluid">
+              </a>
+            </div>
+            <div class="down-content">
+              <h4>Android App Development with Kotlin</h4>
+              <br><a href="https://www.youtube.com/watch?v=your_android_video_link" class="btn btn-primary" target="_blank">Watch the Course</a></br>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Development Course Content -->
+        <div class="col-12 col-sm-6 col-md-4 mb-4">
+          <div class="course-item">
+            <div class="thumb mb-3">
+              <a href="https://www.youtube.com/watch?v=your_project_video_link" target="_blank">
+                <img src="assets/images/yt3.png" alt="Project Course Thumbnail" class="img-fluid">
+              </a>
+            </div>
+            <div class="down-content">
+              <h4>Full-Stack Project Development</h4>
+              <br><a href="https://www.youtube.com/watch?v=your_project_video_link" class="btn btn-primary" target="_blank">Watch the Course</a></br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Us Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Contact Us</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Add your contact form or contact info here -->
+    </div>
+  </section>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        items: 3,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1024: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
+
+  
+    <!-- Popular Courses Section -->
+    <section class="upcoming-meetings" id="meetings">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="section-heading text-center">
+                      <h2>POPULAR COURSES</h2>
+                  </div>
+              </div>
+              <div class="col-12">
+                  <div class="row">
+                      <!-- Android App Development Course -->
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                          <div class="meeting-item">
+                              <div class="thumb">
+                                  <div class="price">
+                                      <span>$100.00</span>
+                                  </div>
+                                  <a href="meeting-details.html">
+                                      <img src="assets/images/featured1.jpg" alt="Android App Development">
+                                  </a>
+                              </div>
+                              <div class="down-content">
+                                  <div class="date">
+                                      <h6>Mar <span>10</span></h6>
+                                  </div>
+                                  <a href="meeting-details.html">
+                                      <h4>Android App Development</h4>
+                                  </a>
+                                  <a href="meeting-details.html">
+                                      <h6>Click here to know more</h6>
+                                  </a>
+                                  <p>Learn to build modern, high-performance Android apps from scratch using Kotlin and Java. Master UI design, APIs, databases, and deployment to Google Play.</p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!-- iOS Development Course -->
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                          <div class="meeting-item">
+                              <div class="thumb">
+                                  <div class="price">
+                                      <span>$100.00</span>
+                                  </div>
+                                  <a href="ios.html">
+                                      <img src="assets/images/featured2.png" alt="iOS Development">
+                                  </a>
+                              </div>
+                              <div class="down-content">
+                                  <div class="date">
+                                      <h6>Mar <span>10</span></h6>
+                                  </div>
+                                  <a href="meeting-details.html">
+                                      <h4>iOS Development Unleashed</h4>
+                                  </a>
+                                  <a href="meeting-details.html">
+                                      <h6>Click here to know more</h6>
+                                  </a>
+                                  <p>Transform your ideas into powerful iOS apps with Swift. Learn intuitive UI design, seamless functionality, and App Store deployment from scratch!</p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Project Development Course -->
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                          <div class="meeting-item">
+                              <div class="thumb">
+                                  <div class="price">
+                                      <span>$100.00</span>
+                                  </div>
+                                  <a href="meeting-details.html">
+                                      <img src="assets/images/meeting-03.jpg" alt="Project Development">
+                                  </a>
+                              </div>
+                              <div class="down-content">
+                                  <div class="date">
+                                      <h6>Mar <span>10</span></h6>
+                                  </div>
+                                  <a href="meeting-details.html">
+                                      <h4>Project Development</h4>
+                                  </a>
+                                  <p>Empowering minds with the tools to build tomorrow's innovations on iOS and Android.</p>
+                              </div>
+                          </div>
+                      </div>
+  
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+  
+    <!-- Projects Developed by Learners Section -->
+<section class="learners-projects" style="padding-top: 40px; padding-bottom: 40px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-heading">
+          <h4>Projects Developed by our Learners</h4>
+        </div>
+        <!-- <p>Check out the innovative apps developed by our learners! Scroll through to see their projects in action.</p> -->
+      </div>
+    </div>
+
+    <!-- Mobile Scrolling Images Section -->
+    <div class="row">
+      <div class="col-12">
+        <div class="project-carousel">
+          <div class="owl-carousel owl-theme">
+            <!-- Project 1 -->
+            <div class="item">
+              <div class="project-item">
+                <a href="#" target="_blank">
+                  <img src="assets/images/app.jpg" alt="Learner's App 1" class="img-fluid">
+                </a>
+                <div class="project-details">
+                  <h5>App Title 1</h5>
+                  <p>Short description of the app developed by the learner.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="item">
+              <div class="project-item">
+                <a href="#" target="_blank">
+                  <img src="assets/images/app2.jpg" alt="Learner's App 2" class="img-fluid">
+                </a>
+                <div class="project-details">
+                  <h5>App Title 2</h5>
+                  <p>Short description of the app developed by the learner.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="item">
+              <div class="project-item">
+                <a href="#" target="_blank">
+                  <img src="assets/images/app3.jpg" alt="Learner's App 3" class="img-fluid">
+                </a>
+                <div class="project-details">
+                  <h5>App Title 3</h5>
+                  <p>Short description of the app developed by the learner.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- More Projects can be added in the same structure -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- jQuery (necessary for Owl Carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
+      items: 3, // Show 3 items by default
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: {
+          items: 1, // Show 1 item on small screens
+          dots: true, // Show dots on small screens
+        },
+        600: {
+          items: 2, // Show 2 items on medium screens
+        },
+        1000: {
+          items: 3, // Show 3 items on larger screens
+        }
+      }
+    });
+  });
+</script>
+
+<style>
+  /* Make images responsive and smaller */
+  .project-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Limit max width for images */
+    margin: 0 auto;
+  }
+
+  /* Make the project details section more consistent */
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Add spacing and hover effect for project details */
+  .project-details {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .project-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+</style>
+
+  
+
+
+
+ 
+
+  <section class="our-courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Based on Reviews</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-courses-item owl-carousel">
+            
+            <!-- First Course Item -->
+            <a href="ios.html">
+              <div class="item">
+                <img src="assets/images/featured2.png" alt="Course One" class="img-fluid">
+                <div class="down-content">
+                  <h4>IOS Development</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                        <span>$100</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+  
+            <!-- Second Course Item -->
+            <a href="meeting-details.html">
+              <div class="item">
+                <img src="assets/images/featured1.jpg" alt="Course Two" class="img-fluid">
+                <div class="down-content">
+                  <h4>Android Development</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                        <span>$100</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+  
+            <!-- Third Course Item -->
+            <a href="your-page3.html">
+              <div class="item">
+                <img src="assets/images/course-03.jpg" alt="Course Three" class="img-fluid">
+                <div class="down-content">
+                  <h4>Project Development</h4>
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-8">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                      <div class="col-4">
+                        <span>$100</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Videos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .video-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .video-section h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+        .video-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-card img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .video-card img:hover {
+            transform: scale(1.05);
+        }
+        .video-card h5 {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .video-card p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="video-section">
+        <div class="container">
+            <h2>📚 Project Videos by Our Learners</h2>
+            <p>Explore amazing educational projects developed by our talented learners.</p>
+
+            <div class="owl-carousel owl-theme">
+                <!-- Video 1 -->
+                <div class="item">
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/watch?v=hX1I56gyDPM" target="_blank">
+                            <img src="https://img.youtube.com/vi/hX1I56gyDPM/0.jpg" alt="Project Video 1">
+                        </a>
+                        <h5>AI-Based Learning System</h5>
+                        <p>A smart AI-driven platform for self-paced learning.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="item">
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/watch?v=F4fbwKV9dBU" target="_blank">
+                            <img src="https://img.youtube.com/vi/F4fbwKV9dBU/0.jpg" alt="Project Video 2">
+                        </a>
+                        <h5>Robotics for Kids</h5>
+                        <p>An engaging way to introduce robotics to students.</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="item">
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/watch?v=ktlTxC4QG8g" target="_blank">
+                            <img src="https://img.youtube.com/vi/ktlTxC4QG8g/0.jpg" alt="Project Video 3">
+                        </a>
+                        <h5>STEM Education Basics</h5>
+                        <p>Exploring STEM concepts in a fun and interactive way.</p>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="item">
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/watch?v=0Bxhkn3w7Jc" target="_blank">
+                            <img src="https://img.youtube.com/vi/0Bxhkn3w7Jc/0.jpg" alt="Project Video 4">
+                        </a>
+                        <h5>Introduction to Python</h5>
+                        <p>Learn the basics of Python programming for beginners.</p>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="item">
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/watch?v=pS3o0UbnD3Y" target="_blank">
+                            <img src="https://img.youtube.com/vi/pS3o0UbnD3Y/0.jpg" alt="Project Video 5">
+                        </a>
+                        <h5>Build Your Own Website</h5>
+                        <p>A step-by-step guide for students to create their own website.</p>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="item">
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/watch?v=UI3ej_cOJGA" target="_blank">
+                            <img src="https://img.youtube.com/vi/UI3ej_cOJGA/0.jpg" alt="Project Video 6">
+                        </a>
+                        <h5>Science Fair Project Ideas</h5>
+                        <p>Innovative science projects for students to explore.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery and Owl Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 800,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+  
+
+  <section class="our-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>A Few Facts About Our University</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content percentage">
+                    <div class="count-digit">99</div>
+                    <div class="count-title">Succesed Students</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">20</div>
+                    <div class="count-title">Current Teachers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content new-students">
+                    <div class="count-digit">200</div>
+                    <div class="count-title">New Students</div>
+                  </div>
+                </div> 
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">32</div>
+                    <div class="count-title">Awards</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-6 align-self-center">
+          <div class="video">
+            <a href="https://www.youtube.com/watch?v=HndV87XpkWg" target="_blank"><img src="assets/images/play-icon.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Let's get in touch</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="YOURNAME...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="subject" type="text" id="subject" placeholder="SUBJECT...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>Phone Number</h6>
+                <span>+91 7780518732</span>
+              </li>
+              <li>
+                <h6>Email Address</h6>
+                <span>info@appcreation.edu</span>
+              </li>
+              <li>
+                <h6>Street Address</h6>
+                <span>Somewhere in India</span>
+              </li>
+              <li>
+                <h6>Website URL</h6>
+                <span>www.appcreation.in</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2025 CVThink Co., Ltd. All Rights Reserved. 
+          <br>Design: <a href="https://cvthink.com" target="_parent" title="free css templates">CVthink</a></p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</body>
+</html>
