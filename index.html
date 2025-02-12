@@ -23,26 +23,69 @@
 <body>
 
   <!-- Sub Header -->
-  <div class="sub-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-sm-8">
-          <div class="left-content">
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-4">
-          <div class="right-icons">
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Sub Header -->
+<div class="sub-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-sm-8">
+        <div class="left-content"></div>
+      </div>
+      <div class="col-lg-4 col-sm-4 text-right">
+        <div class="right-icons">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<!-- CSS Styling -->
+<style>
+  .sub-header {
+    background: #f8f9fa;
+    padding: 10px 0;
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .social-icons li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .social-icons li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #007bff;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .social-icons li a:hover {
+    transform: scale(1.1);
+    background: #0056b3;
+  }
+</style>
+
 
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
@@ -196,106 +239,107 @@
 
   <!-- ***** Main Banner Area End ***** -->
 
-  <section class="course-contents">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-heading text-center">
-            <h2>Course Content</h2>
-          </div>
-        </div>
-
-        <!-- iOS Development Course Content -->
-        <div class="col-12 col-sm-6 col-md-4 mb-4">
-          <div class="course-item">
-            <div class="thumb mb-3">
-              <a href="https://www.youtube.com/watch?v=your_ios_video_link" target="_blank">
-                <img src="assets/images/yt1.png" alt="iOS Course Thumbnail" class="img-fluid">
-              </a>
-            </div>
-            <div class="down-content">
-              <h4>iOS Development - Swift Mastery</h4>
-              <br><a href="https://www.youtube.com/watch?v=your_ios_video_link" class="btn btn-primary" target="_blank">Watch the Course</a></br>
-            </div>
-          </div>
-        </div>
-
-        <!-- Android Development Course Content -->
-        <div class="col-12 col-sm-6 col-md-4 mb-4">
-          <div class="course-item">
-            <div class="thumb mb-3">
-              <a href="https://www.youtube.com/watch?v=your_android_video_link" target="_blank">
-                <img src="assets/images/yt2.png" alt="Android Course Thumbnail" class="img-fluid">
-              </a>
-            </div>
-            <div class="down-content">
-              <h4>Android App Development with Kotlin</h4>
-              <br><a href="https://www.youtube.com/watch?v=your_android_video_link" class="btn btn-primary" target="_blank">Watch the Course</a></br>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Development Course Content -->
-        <div class="col-12 col-sm-6 col-md-4 mb-4">
-          <div class="course-item">
-            <div class="thumb mb-3">
-              <a href="https://www.youtube.com/watch?v=your_project_video_link" target="_blank">
-                <img src="assets/images/yt3.png" alt="Project Course Thumbnail" class="img-fluid">
-              </a>
-            </div>
-            <div class="down-content">
-              <h4>Full-Stack Project Development</h4>
-              <br><a href="https://www.youtube.com/watch?v=your_project_video_link" class="btn btn-primary" target="_blank">Watch the Course</a></br>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Contact Us Section -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-heading text-center">
-            <h2>Contact Us</h2>
-          </div>
-        </div>
-      </div>
-      <!-- Add your contact form or contact info here -->
-    </div>
-  </section>
-
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        items: 3,
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          1024: {
-            items: 3
-          }
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Course UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
         }
-      });
-    });
-  </script>
+        .course-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .course-item:hover {
+            transform: translateY(-5px);
+        }
+        .thumb img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+        .down-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #6a0dad;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .badge-category {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #6a0dad;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .course-item {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container my-5">
+        <div class="text-center mb-4">
+            <h2>Course Content</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="course-item position-relative">
+                    <span class="badge-category">IOS</span>
+                    <div class="thumb">
+                        <img src="assets/images/yt1.png" alt="iOS Development">
+                    </div>
+                    <div class="down-content">
+                        <h4>About iOS</h4>
+                        <a href="#" class="btn btn-primary">Watch Course</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="course-item position-relative">
+                    <span class="badge-category">ANDROID</span>
+                    <div class="thumb">
+                        <img src="assets/images/yt2.png" alt="Android Development">
+                    </div>
+                    <div class="down-content">
+                        <h4>About Android</h4>
+                        <a href="#" class="btn btn-primary">Watch Course</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="course-item position-relative">
+                    <span class="badge-category">PROJECTS</span>
+                    <div class="thumb">
+                        <img src="assets/images/yt3.png" alt="Projects">
+                    </div>
+                    <div class="down-content">
+                        <h4>About Projects</h4>
+                        <a href="#" class="btn btn-primary">Watch Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-
 </html>
+
 
   
     <!-- Popular Courses Section -->
@@ -743,113 +787,126 @@
 </head>
 <body>
 
-    <section class="video-section">
-        <div class="container">
-            <h2>📚 Project Videos by Our Learners</h2>
-            <p>Explore amazing educational projects developed by our talented learners.</p>
-
-            <div class="owl-carousel owl-theme">
-                <!-- Video 1 -->
-                <div class="item">
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/watch?v=hX1I56gyDPM" target="_blank">
-                            <img src="https://img.youtube.com/vi/hX1I56gyDPM/0.jpg" alt="Project Video 1">
-                        </a>
-                        <h5>AI-Based Learning System</h5>
-                        <p>A smart AI-driven platform for self-paced learning.</p>
-                    </div>
-                </div>
-
-                <!-- Video 2 -->
-                <div class="item">
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/watch?v=F4fbwKV9dBU" target="_blank">
-                            <img src="https://img.youtube.com/vi/F4fbwKV9dBU/0.jpg" alt="Project Video 2">
-                        </a>
-                        <h5>Robotics for Kids</h5>
-                        <p>An engaging way to introduce robotics to students.</p>
-                    </div>
-                </div>
-
-                <!-- Video 3 -->
-                <div class="item">
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/watch?v=ktlTxC4QG8g" target="_blank">
-                            <img src="https://img.youtube.com/vi/ktlTxC4QG8g/0.jpg" alt="Project Video 3">
-                        </a>
-                        <h5>STEM Education Basics</h5>
-                        <p>Exploring STEM concepts in a fun and interactive way.</p>
-                    </div>
-                </div>
-
-                <!-- Video 4 -->
-                <div class="item">
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/watch?v=0Bxhkn3w7Jc" target="_blank">
-                            <img src="https://img.youtube.com/vi/0Bxhkn3w7Jc/0.jpg" alt="Project Video 4">
-                        </a>
-                        <h5>Introduction to Python</h5>
-                        <p>Learn the basics of Python programming for beginners.</p>
-                    </div>
-                </div>
-
-                <!-- Video 5 -->
-                <div class="item">
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/watch?v=pS3o0UbnD3Y" target="_blank">
-                            <img src="https://img.youtube.com/vi/pS3o0UbnD3Y/0.jpg" alt="Project Video 5">
-                        </a>
-                        <h5>Build Your Own Website</h5>
-                        <p>A step-by-step guide for students to create their own website.</p>
-                    </div>
-                </div>
-
-                <!-- Video 6 -->
-                <div class="item">
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/watch?v=UI3ej_cOJGA" target="_blank">
-                            <img src="https://img.youtube.com/vi/UI3ej_cOJGA/0.jpg" alt="Project Video 6">
-                        </a>
-                        <h5>Science Fair Project Ideas</h5>
-                        <p>Innovative science projects for students to explore.</p>
-                    </div>
-                </div>
-
+  <section class="video-section">
+    <div class="container">
+        <h2 class="section-title">📚 Project Videos by Our Learners</h2>
+        <p class="section-description">Explore amazing educational projects developed by our talented learners.</p>
+        
+        <div class="video-grid">
+            <!-- Video Items -->
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=hX1I56gyDPM" target="_blank">
+                    <img src="https://img.youtube.com/vi/hX1I56gyDPM/0.jpg" alt="Project Video 1">
+                </a>
+                <h5>AI-Based Learning System</h5>
+                <p>A smart AI-driven platform for self-paced learning.</p>
+            </div>
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=F4fbwKV9dBU" target="_blank">
+                    <img src="https://img.youtube.com/vi/F4fbwKV9dBU/0.jpg" alt="Project Video 2">
+                </a>
+                <h5>Robotics for Kids</h5>
+                <p>An engaging way to introduce robotics to students.</p>
+            </div>
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=ktlTxC4QG8g" target="_blank">
+                    <img src="https://img.youtube.com/vi/ktlTxC4QG8g/0.jpg" alt="Project Video 3">
+                </a>
+                <h5>STEM Education Basics</h5>
+                <p>Exploring STEM concepts in a fun and interactive way.</p>
+            </div>
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=0Bxhkn3w7Jc" target="_blank">
+                    <img src="https://img.youtube.com/vi/0Bxhkn3w7Jc/0.jpg" alt="Project Video 4">
+                </a>
+                <h5>Introduction to Python</h5>
+                <p>Learn the basics of Python programming for beginners.</p>
+            </div>
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=pS3o0UbnD3Y" target="_blank">
+                    <img src="https://img.youtube.com/vi/pS3o0UbnD3Y/0.jpg" alt="Project Video 5">
+                </a>
+                <h5>Build Your Own Website</h5>
+                <p>A step-by-step guide for students to create their own website.</p>
+            </div>
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=UI3ej_cOJGA" target="_blank">
+                    <img src="https://img.youtube.com/vi/UI3ej_cOJGA/0.jpg" alt="Project Video 6">
+                </a>
+                <h5>Science Fair Project Ideas</h5>
+                <p>Innovative science projects for students to explore.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- jQuery and Owl Carousel JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel({
-                items: 3,
-                loop: true,
-                margin: 20,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                smartSpeed: 800,
-                nav: false,
-                dots: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            });
-        });
-    </script>
+<style>
+    .container {
+        text-align: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .section-description {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 30px;
+    }
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .video-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        transition: transform 0.3s ease;
+        text-align: center;
+    }
+    .video-card:hover {
+        transform: translateY(-5px);
+    }
+    .video-card img {
+        width: 100%;
+        border-radius: 8px;
+        max-height: 180px;
+        object-fit: cover;
+    }
+    .video-card h5 {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    .video-card p {
+        font-size: 0.9rem;
+        color: #666;
+    }
+    
+    /* Responsive Design */
+    @media (min-width: 1024px) {
+        .video-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @media (max-width: 768px) {
+        .video-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 480px) {
+        .video-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+</style>
 
-</body>
-</html>
 
   
 
