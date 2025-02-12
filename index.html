@@ -390,7 +390,7 @@
       </div>
     </section>
   
-    <!-- Projects Developed by Learners Section -->
+<!-- Projects Developed by Learners Section -->
 <section class="learners-projects" style="padding-top: 40px; padding-bottom: 40px;">
   <div class="container">
     <div class="row">
@@ -398,7 +398,6 @@
         <div class="section-heading">
           <h4>Projects Developed by our Learners</h4>
         </div>
-        <!-- <p>Check out the innovative apps developed by our learners! Scroll through to see their projects in action.</p> -->
       </div>
     </div>
 
@@ -407,46 +406,75 @@
       <div class="col-12">
         <div class="project-carousel">
           <div class="owl-carousel owl-theme">
-            <!-- Project 1 -->
+            <!-- Project Items -->
             <div class="item">
               <div class="project-item">
                 <a href="#" target="_blank">
-                  <img src="assets/images/app.jpg" alt="Learner's App 1" class="img-fluid">
+                  <img src="assets/images/app.png" alt="Learner's App 1" class="img-fluid">
                 </a>
                 <div class="project-details">
                   <h5>App Title 1</h5>
-                  <p>Short description of the app developed by the learner.</p>
+                  <p>Short description of the app.</p>
                 </div>
               </div>
             </div>
-
-            <!-- Project 2 -->
             <div class="item">
               <div class="project-item">
                 <a href="#" target="_blank">
-                  <img src="assets/images/app2.jpg" alt="Learner's App 2" class="img-fluid">
+                  <img src="assets/images/app.png" alt="Learner's App 2" class="img-fluid">
                 </a>
                 <div class="project-details">
                   <h5>App Title 2</h5>
-                  <p>Short description of the app developed by the learner.</p>
+                  <p>Short description of the app.</p>
                 </div>
               </div>
             </div>
-
-            <!-- Project 3 -->
             <div class="item">
               <div class="project-item">
                 <a href="#" target="_blank">
-                  <img src="assets/images/app3.jpg" alt="Learner's App 3" class="img-fluid">
+                  <img src="assets/images/app.png" alt="Learner's App 3" class="img-fluid">
                 </a>
                 <div class="project-details">
                   <h5>App Title 3</h5>
-                  <p>Short description of the app developed by the learner.</p>
+                  <p>Short description of the app.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="project-item">
+                <a href="#" target="_blank">
+                  <img src="assets/images/app.png" alt="Learner's App 4" class="img-fluid">
+                </a>
+                <div class="project-details">
+                  <h5>App Title 4</h5>
+                  <p>Short description of the app.</p>
                 </div>
               </div>
             </div>
 
-            <!-- More Projects can be added in the same structure -->
+            <div class="item">
+              <div class="project-item">
+                <a href="#" target="_blank">
+                  <img src="assets/images/app.png" alt="Learner's App 4" class="img-fluid">
+                </a>
+                <div class="project-details">
+                  <h5>App Title 5</h5>
+                  <p>Short description of the app.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="project-item">
+                <a href="#" target="_blank">
+                  <img src="assets/images/app.png" alt="Learner's App 4" class="img-fluid">
+                </a>
+                <div class="project-details">
+                  <h5>App Title 6</h5>
+                  <p>Short description of the app.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -462,22 +490,18 @@
 <script>
   $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
-      items: 3, // Show 3 items by default
+      items: 4,
       loop: true,
       margin: 10,
       autoplay: true,
       autoplayTimeout: 3000,
+      nav: true,
+      dots: true,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
       responsive: {
-        0: {
-          items: 1, // Show 1 item on small screens
-          dots: true, // Show dots on small screens
-        },
-        600: {
-          items: 2, // Show 2 items on medium screens
-        },
-        1000: {
-          items: 3, // Show 3 items on larger screens
-        }
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 4 }
       }
     });
   });
@@ -488,32 +512,84 @@
   .project-item img {
     width: 100%;
     height: auto;
-    max-width: 200px; /* Limit max width for images */
+    max-width: 200px;
     margin: 0 auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
   }
 
-  /* Make the project details section more consistent */
+  /* Add hover effect for images */
+  .project-item img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Styling for project items */
   .project-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #f8f8f8;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
 
   /* Add spacing and hover effect for project details */
   .project-details {
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
   }
 
+  /* Hover effect on project item */
   .project-item:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
+  /* Navigation arrows styling */
+  .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);  /* Dark background for visibility */
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px; /* Increase font size for arrows */
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Left arrow positioning */
+  .owl-nav .owl-prev {
+    left: -40px;  /* Adjust left position */
+  }
+
+  /* Right arrow positioning */
+  .owl-nav .owl-next {
+    right: -40px;  /* Adjust right position */
+  }
+
+  /* Hover effect for navigation arrows */
+  .owl-nav button:hover {
+    background: rgba(0, 0, 0, 0.9);  /* Darker background on hover */
+    transform: scale(1.1);  /* Slight scaling effect */
+  }
+
+  /* Optional: Style when the arrow is disabled */
+  .owl-nav button.disabled {
+    background: rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
   }
 </style>
+
 
   
 
