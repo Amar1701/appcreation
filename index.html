@@ -837,6 +837,62 @@
                 <p>Innovative science projects for students to explore.</p>
             </div>
         </div>
+
+        <!-- Responsive Image Section with Enhanced UI -->
+<div class="image-container">
+  <img src="assets/images/project.jpg" alt="Project Info" class="responsive-image">
+</div>
+
+<style>
+  .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      padding: 20px;
+      background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+  }
+
+  .image-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .responsive-image {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+      .image-container {
+          padding: 15px;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .image-container {
+          padding: 10px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .image-container {
+          padding: 5px;
+      }
+      .responsive-image {
+          border-radius: 5px;
+      }
+  }
+</style>
+
     </div>
 </section>
 
@@ -889,6 +945,18 @@
         color: #666;
     }
     
+    /* Responsive Image */
+    .image-container {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .responsive-image {
+        width: 100%;
+        max-width: 1000px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
     /* Responsive Design */
     @media (min-width: 1024px) {
         .video-grid {
@@ -904,8 +972,533 @@
         .video-grid {
             grid-template-columns: repeat(1, 1fr);
         }
+        .responsive-image {
+            width: 90%;
+        }
     }
 </style>
+
+<!-- Live Projects & App Download Section -->
+<div class="live-projects-section">
+  <button class="live-projects-btn">
+      🚀 LIVE PROJECTS FOR PRACTICE WHICH ARE IN LIVE ON
+  </button>
+  <span class="emoji">👉</span>
+  <div class="app-buttons">
+      <a href="#" class="app-link">
+          <img src="assets/images/app-store.png" alt="Download on the App Store" class="download-img">
+      </a>
+      <a href="#" class="app-link">
+          <img src="assets/images/google-play.png" alt="Get it on Google Play" class="download-img">
+      </a>
+  </div>
+</div>
+
+<style>
+  .live-projects-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 40px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .live-projects-btn {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .live-projects-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+  }
+
+  .emoji {
+      font-size: 24px;
+  }
+
+  .app-buttons {
+      display: flex;
+      gap: 10px;
+  }
+
+  .download-img {
+      height: 55px; /* Ensures both images are the same size */
+      width: auto;
+      transition: transform 0.3s ease;
+  }
+
+  .download-img:hover {
+      transform: scale(1.1);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      .live-projects-section {
+          flex-direction: column;
+          text-align: center;
+      }
+      .download-img {
+          height: 50px;
+      }
+  }
+</style>
+ 
+<!-- PROJECT SHOWCASE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <style>
+        /* Default Light Theme */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Section with Background Image */
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            z-index: 1; /* Ensure content is on top of the overlay */
+            background-image: url('assets/images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        /* Adding a dark overlay to reduce contrast */
+        .project-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: -1; /* Keep it behind the content */
+        }
+
+        .project-card {
+            width: 380px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #0e0d0d, #bda113, #6a5acd, #32cd32);
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .project-badge {
+            background: #3b5998;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .project-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .project-name {
+            font-size: 22px;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .project-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-description {
+            max-width: 60%;
+        }
+
+        .project-description h4 {
+            background: #3b5998;
+            color: white;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .highlight-text {
+            font-size: 16px;
+            font-weight: bold;
+            color: #f39c12;
+        }
+
+        .project-image img {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 10px;
+        }
+
+        .start-button {
+            background: #28a745;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .start-button:hover {
+            background: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Responsive layout for larger screens */
+        @media (min-width: 768px) {
+            .project-card {
+                width: calc(50% - 40px);
+            }
+        }
+
+        /* Dark Theme */
+        body.dark-mode {
+            background-color: #181818;
+            color: #fff;
+        }
+
+        body.dark-mode .project-card {
+            background: #2c2f36;
+            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark-mode .project-badge {
+            background: #1a73e8;
+        }
+
+        body.dark-mode .project-title {
+            color: #f1f1f1;
+        }
+
+        body.dark-mode .project-name {
+            color: #ff5722;
+        }
+
+        body.dark-mode .highlight-text {
+            color: #ffeb3b;
+        }
+
+        body.dark-mode .start-button {
+            background: #66bb6a;
+        }
+
+        body.dark-mode .start-button:hover {
+            background: #388e3c;
+        }
+
+        /* Alternate Theme */
+        body.alternate-mode {
+            background-color: #ffeb3b;
+            color: #333;
+        }
+
+        body.alternate-mode .project-card {
+            background: #ff5722;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        body.alternate-mode .project-badge {
+            background: #3b5998;
+        }
+
+        body.alternate-mode .project-title {
+            color: #ffffff;
+        }
+
+        body.alternate-mode .project-name {
+            color: #000000;
+        }
+
+        body.alternate-mode .highlight-text {
+            color: #f39c12;
+        }
+
+        body.alternate-mode .start-button {
+            background: #28a745;
+        }
+
+        body.alternate-mode .start-button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Theme Toggle Buttons -->
+    <!-- <div style="position: fixed; top: 20px; right: 20px; display: flex; gap: 10px;">
+        <button onclick="toggleTheme('light')">Light Theme</button>
+        <button onclick="toggleTheme('dark')">Dark Theme</button>
+        <button onclick="toggleTheme('alternate')">Alternate Theme</button>
+    </div> -->
+
+    <!-- Project Showcase Section with Background Image -->
+    <div class="project-container">
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-badge">PROJECT FOR PRACTICE</span>
+                <h2 class="project-title">Project No: <span>1</span></h2>
+                <h3 class="project-name">RealEstate App</h3>
+            </div>
+            <div class="project-content">
+                <div class="project-description">
+                    <!-- <h4>PROJECT DESCRIPTION:</h4> -->
+                    <p class="highlight-text">Easy way to buy, rent & sell your property by using this app</p>
+                    <p>Buying, renting, and selling your property has never been easier. Just a single click for all your home purchase or rental needs.</p>
+                </div>
+                <div class="project-image">
+                    <img src="assets/images/app.png" alt="Real Estate App">
+                </div>
+            </div>
+            <button class="start-button">START PROJECT 🚀</button>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-badge">PROJECT FOR PRACTICE</span>
+                <h2 class="project-title">Project No: <span>2</span></h2>
+                <h3 class="project-name">E-Commerce App</h3>
+            </div>
+            <div class="project-content">
+                <div class="project-description">
+                    <!-- <h4>PROJECT DESCRIPTION:</h4> -->
+                    <p class="highlight-text">Seamless shopping experience for all your needs</p>
+                    <p>Shop from thousands of products with secure payment options and easy returns.</p>
+                </div>
+                <div class="project-image">
+                    <img src="assets/images/app.png" alt="E-Commerce App">
+                </div>
+            </div>
+            <button class="start-button">START PROJECT 🚀</button>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-badge">PROJECT FOR PRACTICE</span>
+                <h2 class="project-title">Project No: <span>3</span></h2>
+                <h3 class="project-name">Fitness Tracker</h3>
+            </div>
+            <div class="project-content">
+                <div class="project-description">
+                    <!-- <h4>PROJECT DESCRIPTION:</h4> -->
+                    <p class="highlight-text">Track your fitness goals and progress</p>
+                    <p>Keep track of your workouts, meals, and health metrics with this easy-to-use app.</p>
+                </div>
+                <div class="project-image">
+                    <img src="assets/images/app.png" alt="Fitness Tracker">
+                </div>
+            </div>
+            <button class="start-button">START PROJECT 🚀</button>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-badge">PROJECT FOR PRACTICE</span>
+                <h2 class="project-title">Project No: <span>4</span></h2>
+                <h3 class="project-name">Task Manager</h3>
+            </div>
+            <div class="project-content">
+                <div class="project-description">
+                    <!-- <h4>PROJECT DESCRIPTION:</h4> -->
+                    <p class="highlight-text">Manage tasks and projects easily</p>
+                    <p>Organize your work, set deadlines, and track progress with this simple yet powerful app.</p>
+                </div>
+                <div class="project-image">
+                    <img src="assets/images/app.png" alt="Task Manager">
+                </div>
+            </div>
+            <button class="start-button">START PROJECT 🚀</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme(theme) {
+            document.body.classList.remove('light-mode', 'dark-mode', 'alternate-mode');
+            document.body.classList.add(theme + '-mode');
+        }
+    </script>
+
+</body>
+</html>
+
+<!-- ---------------------------------------- -->
+ <!-- DEMO -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Join for Demo</title>
+     <style>
+         /* Default Styles */
+         body {
+             font-family: 'Arial', sans-serif;
+             margin: 0;
+             padding: 0;
+             background-color: #f0f2f5;
+             color: #333;
+         }
+ 
+         /* Popup Styles */
+         #popup {
+             display: none;
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             background: rgba(0, 0, 0, 0.5);
+             justify-content: center;
+             align-items: center;
+             z-index: 1000;
+         }
+ 
+         #popup-content {
+             background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+             color: white;
+             padding: 20px;
+             border-radius: 10px;
+             text-align: center;
+             width: 80%;
+             max-width: 500px;
+             background-image: url('assets/images/demo.png'); /* Background image */
+             background-size: cover;
+             background-position: center;
+             position: relative;
+         }
+ 
+         #popup h2 {
+             font-size: 28px;
+             color: #fff;
+             margin-bottom: 15px;
+         }
+ 
+         #popup p {
+             font-size: 18px;
+             color: #fff;
+             margin-bottom: 20px;
+         }
+ 
+         #join-button {
+             background-color: #25d366; /* WhatsApp Green */
+             color: white;
+             border: none;
+             padding: 12px 24px;
+             font-size: 18px;
+             border-radius: 5px;
+             cursor: pointer;
+             margin-top: 15px;
+         }
+ 
+         #join-button:hover {
+             background-color: #128c7e; /* WhatsApp Dark Green */
+         }
+ 
+         /* Close Button (Cross Mark) */
+         .close-btn {
+             position: absolute;
+             top: 10px;
+             right: 10px;
+             background-color: transparent;
+             color: white;
+             font-size: 30px;
+             border: none;
+             cursor: pointer;
+         }
+ 
+         .close-btn:hover {
+             color: #ff6f61;
+         }
+ 
+     </style>
+ </head>
+ <body>
+ 
+     <!-- Popup for Join Demo -->
+     <div id="popup">
+         <div id="popup-content">
+             <button class="close-btn" onclick="closePopup()">&times;</button> <!-- Close Button -->
+             <!-- <h2>Join Our Demo Session!</h2>
+             <p>Click the button below to join the demo via WhatsApp.</p> -->
+             <button id="join-button" onclick="redirectToWhatsApp()">Join Now</button>
+         </div>
+     </div>
+ 
+     <script>
+         // Function to show popup on page load
+         window.onload = function() {
+             // Display the popup if it's a new session (first load)
+             setTimeout(function() {
+                 document.getElementById('popup').style.display = 'flex';
+             }, 500); // Delay for half a second before showing the popup
+         };
+ 
+         // Function to redirect to WhatsApp
+         function redirectToWhatsApp() {
+             const whatsappURL = "https://wa.me/917780518732"; // Replace with your WhatsApp number (with country code)
+             window.location.href = whatsappURL;
+         }
+ 
+         // Function to close the popup
+         function closePopup() {
+             document.getElementById('popup').style.display = 'none';
+         }
+     </script>
+ 
+ </body>
+ </html>
+ 
 
 
   
