@@ -88,154 +88,504 @@
 
 
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
-                APP CREATION
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-                <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
-              </ul>
-              <a class='menu-trigger'>
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
-            </nav>
-          </div>
-        </div>
+    <!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav">
+          <!-- ***** Logo Start ***** -->
+          <a href="index.html" class="logo">
+            APP CREATION
+          </a>
+          <!-- ***** Logo End ***** -->
+          <!-- ***** Menu Start ***** -->
+          <ul class="nav">
+            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+            <li class="scroll-to-section"><a href="#courses">Courses</a></li>
+            <li class="scroll-to-section"><a href="javascript:void(0);" onclick="openContactPopup()">Contact Us</a></li>
+          </ul>
+          <a class='menu-trigger'>
+            <span>Menu</span>
+          </a>
+          <!-- ***** Menu End ***** -->
+        </nav>
       </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-  <!-- ***** Main Banner Area Start ***** -->
-<section class="section main-banner" id="top" data-section="section1">
-  <video autoplay muted loop id="bg-video">
-      <source src="assets/images/course-video.mp4" type="video/mp4" />
-  </video>
-
-  <div class="video-overlay header-text">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="caption">
-                      <h6>Hello Students, Welcome to</h6>
-                      <h2>No 1 Online Learning Platform</h2>
-                      <p>Step-by-step iOS and Android development tutorials to build powerful mobile apps</p>
-                      <div class="main-button-red">
-                          <a href="https://wa.me/917780518732?text=Hello%2C%20I%20want%20to%20join!" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s" target="_blank">Join Now</a>
-                      </div>
-                      <div class="main-button-red mt-3">
-                          <a href="javascript:void(0);" class="btn hero-btn" onclick="openPopup()">Click for Class Standard</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+    </div>
   </div>
-</section>
+</header>
 
-<!-- Popup Modal -->
-<div id="imagePopup" class="popup-overlay">
+<!-- ***** Contact Popup ***** -->
+<div id="contactPopup" class="popup-overlay">
   <div class="popup-content">
-      <span class="close-btn" onclick="closePopup()">&times;</span>
-      <img src="assets/images/popup.png" alt="Class Standard" class="popup-img">
+    <span class="close-btn" onclick="closeContactPopup()">&times;</span>
+    <h2>Contact Us</h2>
+    <p>Email: example@example.com</p>
+    <p>Phone: +91 1234567890</p>
+    <p>Address: Your Office Address Here</p>
   </div>
 </div>
 
-<!-- CSS for Popup -->
+<!-- JavaScript for Popups -->
+<script>
+  function openContactPopup() {
+    document.getElementById("contactPopup").style.display = "flex";
+  }
+  function closeContactPopup() {
+    document.getElementById("contactPopup").style.display = "none";
+  }
+</script>
+
 <style>
-  /* Popup Background */
-  .popup-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 80%;
+  width: 400px;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+  position: relative; /* Ensure the close button is positioned relative to the popup */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; /* Adjusted for better positioning */
+  right: 10px; /* Adjusted for better positioning */
+  font-size: 30px;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+</style>
+
+
+    
+    <!-- Header Area End -->
+<!-- ***** Main Banner Area Start *****  -->
+  <section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/images/firstpagevideo.mp4" type="video/mp4" />
+    </video>
+  
+    <div class="video-overlay header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="caption">
+                        <h6 class="highlight">It is</h6>
+                        <h2 class="main-title">MOBILE APPS TRAINING ACADEMY</h2>
+                        <p class="subtitle">Online Training & <span class="live">LIVE ▶</span> Class Recording</p>
+                        <p class="support">We Support You Until You Get <span class="job">JOB</span> 👍</p>
+                        <h3 class="success">Become a Successful Software Employee <br> by Gaining In-Depth & Strong Knowledge</h3>
+                        <p class="quote">"Don't search for the company, let the company search for you"</p>
+                        <p class="experience">I will share my whole experience with you <br> You will be more than a real-time employee</p>
+                        
+                        <div class="main-buttons">
+                            <a href="https://wa.me/917780518732?text=Hello%2C%20I%20want%20to%20join!" class="btn hero-btn" target="_blank">Join Now</a>
+                            <a href="javascript:void(0);" class="btn hero-btn" onclick="openPopup()">Just Follow My Class Standards</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Popup Modal for Class Standards -->
+  <div id="imagePopup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <img src="assets/images/popup.png" alt="Class Standard" class="popup-img">
+    </div>
+  </div>
+  
+  <!-- CSS for Styling -->
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Poppins', sans-serif; /* Modern clean font */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    .highlight { 
+      color: #ffcc00; 
+      font-size: 28px; 
+      font-weight: 700; 
+      letter-spacing: 2px; 
+    }
+  
+    .main-title { 
+      font-size: 50px; 
+      font-weight: 800; 
+      color: #ffcc00; 
+      text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5); 
+      margin-top: 20px; 
+    }
+  
+    .subtitle, .support { 
+      font-size: 24px; 
+      color: #fff; 
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+  
+    .live { 
+      background: #0f0; 
+      color: #000; 
+      padding: 8px 20px; 
+      border-radius: 8px; 
+      font-weight: bold;
+    }
+  
+    .job { 
+      color: #00ff00; 
+      font-weight: bold; 
+    }
+  
+    .success { 
+      font-size: 30px; 
+      font-weight: 700; 
+      color: #7f58ff; 
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+      margin-top: 20px; 
+    }
+  
+    .quote { 
+      font-size: 22px; 
+      font-style: italic; 
+      color: #fff; 
+      text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); 
+      margin-bottom: 20px;
+    }
+  
+    .experience { 
+      font-size: 20px; 
+      color: #ff66cc; 
+      font-weight: 500; 
+      margin-bottom: 25px;
+    }
+  
+    /* Button Styling */
+    .main-buttons {
+      display: flex;
       justify-content: center;
-      align-items: center;
-      z-index: 1000;
-  }
-
-  /* Popup Box */
-  .popup-content {
-      position: relative;
-      background: #fff;
-      padding: 20px;
-      border-radius: 15px;
-      text-align: center;
-      max-width: 90%;
-      width: 450px;
-      animation: fadeIn 0.3s ease-in-out;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  }
-
-  /* Popup Image */
-  .popup-img {
-      width: 100%;
-      border-radius: 10px;
-      max-height: 400px;
-      object-fit: contain;
-  }
-
-  /* Close Button */
-  .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 25px;
-      cursor: pointer;
-      color: #555;
-  }
-
-  .close-btn:hover {
-      color: red;
-  }
-
-  /* Fade-in animation */
-  @keyframes fadeIn {
-      from {
-          opacity: 0;
-          transform: scale(0.9);
+      gap: 30px;
+      margin-top: 25px;
+      z-index: 9999; /* Ensure buttons are above the video */
+    }
+  
+    .hero-btn {
+      background: linear-gradient(45deg, #ff66cc, #ff3385);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 15px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+  
+    .hero-btn:hover {
+      background: linear-gradient(45deg, #ff3385, #ff66cc);
+      transform: translateY(-5px); /* Slight lift effect on hover */
+    }
+  
+    .hero-btn:active {
+      transform: translateY(1px); /* Button pressed effect */
+    }
+  
+    /* Popup Styling */
+    .popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+  
+    .popup-content {
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        max-width: 80%;
+        width: 500px;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+    }
+  
+    .popup-img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+  
+    .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        color: #555;
+    }
+  
+    .close-btn:hover {
+        color: red;
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .main-title {
+        font-size: 40px;
       }
-      to {
-          opacity: 1;
-          transform: scale(1);
+  
+      .subtitle, .support {
+        font-size: 22px;
       }
+  
+      .success {
+        font-size: 24px;
+      }
+  
+      .quote {
+        font-size: 18px;
+      }
+  
+      .experience {
+        font-size: 18px;
+      }
+  
+      .main-buttons {
+        flex-direction: column;
+        gap: 15px;
+      }
+  
+      .hero-btn {
+        padding: 12px 30px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .main-title {
+        font-size: 30px;
+      }
+  
+      .subtitle, .support {
+        font-size: 20px;
+      }
+  
+      .quote {
+        font-size: 16px;
+      }
+  
+      .experience {
+        font-size: 14px;
+      }
+  
+      .hero-btn {
+        padding: 10px 25px;
+        font-size: 16px;
+      }
+    }
+  </style>
+  
+  <!-- JavaScript for Popup -->
+  <script>
+    function openPopup() {
+        document.getElementById("imagePopup").style.display = "flex";
+    }
+    function closePopup() {
+        document.getElementById("imagePopup").style.display = "none";
+    }
+  </script>
+
+
+  <!------------------------------- Video & Image Section -->
+<!-- Video & Experience Section -->
+<section class="video-experience-section">
+  <div class="container">
+    <div class="grid-container">
+      
+      <!-- Video Section -->
+      <div class="grid-item video-box">
+        <video autoplay muted loop class="responsive-content">
+          <source src="assets/images/app-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay-text">
+          <h3>Explore Our Training</h3>
+        </div>
+      </div>
+
+      <!-- Experience Progress Bar -->
+      <div class="grid-item experience-box">
+        <h2 class="experience-title">12+ Years of Teaching Experience</h2>
+        <div class="progress-container">
+          <div class="progress-bar" id="experience-bar"></div>
+        </div>
+        <p class="experience-text">Expert guidance with real-world industry knowledge.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CSS Styling -->
+<style>
+  /* Section Background */
+  .video-experience-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
   }
 
-  /* Mobile Responsiveness */
-  @media (max-width: 500px) {
-      .popup-content {
-          width: 90%;
-          padding: 15px;
-      }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
 
-      .popup-img {
-          max-height: 300px;
-      }
+  /* Grid Layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  /* Common Styling for Video & Experience */
+  .grid-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 350px; /* Fixed Height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+  }
+
+  /* Ensuring Video Matches */
+  .responsive-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  /* Overlay Text */
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .overlay-text h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  /* Experience Section */
+  .experience-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #ff7b00, #ffcc00);
+  }
+
+  .experience-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .progress-container {
+    width: 80%;
+    height: 10px;
+    background: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #0084ff;
+    transition: width 2s ease-in-out;
+  }
+
+  .experience-text {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .grid-item {
+      height: 250px;
+    }
+
+    .experience-title {
+      font-size: 20px;
+    }
   }
 </style>
 
-<!-- JavaScript for Popup -->
+<!-- JavaScript for Progress Bar Animation -->
 <script>
-  function openPopup() {
-      document.getElementById("imagePopup").style.display = "flex";
-  }
-
-  function closePopup() {
-      document.getElementById("imagePopup").style.display = "none";
-  }
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("experience-bar").style.width = "100%";
+  });
 </script>
+
+
+  
 
   <!-- ***** Main Banner Area End ***** -->
 
@@ -778,7 +1128,7 @@
 
  
 
-  <section class="our-courses" id="courses">
+  <!-- <section class="our-courses" id="courses">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -787,10 +1137,10 @@
           </div>
         </div>
         <div class="col-lg-12">
-          <div class="owl-courses-item owl-carousel">
+          <div class="owl-courses-item owl-carousel"> -->
             
             <!-- First Course Item -->
-            <a href="ios.html">
+            <!-- <a href="ios.html">
               <div class="item">
                 <img src="assets/images/featured2.png" alt="Course One" class="img-fluid">
                 <div class="down-content">
@@ -813,10 +1163,10 @@
                   </div>
                 </div>
               </div>
-            </a>
+            </a> -->
   
             <!-- Second Course Item -->
-            <a href="meeting-details.html">
+            <!-- <a href="meeting-details.html">
               <div class="item">
                 <img src="assets/images/featured1.jpg" alt="Course Two" class="img-fluid">
                 <div class="down-content">
@@ -837,10 +1187,10 @@
                   </div>
                 </div>
               </div>
-            </a>
+            </a> -->
   
             <!-- Third Course Item -->
-            <a href="your-page3.html">
+            <!-- <a href="your-page3.html">
               <div class="item">
                 <img src="assets/images/course-03.jpg" alt="Course Three" class="img-fluid">
                 <div class="down-content">
@@ -868,7 +1218,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!DOCTYPE html>
 <html lang="en">
@@ -1654,7 +2004,7 @@
 
   
 
-  <section class="our-facts">
+  <!-- <section class="our-facts">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -1703,78 +2053,13 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="contact-us" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9 align-self-center">
-          <div class="row">
-            <div class="col-lg-12">
-              <form id="contact" action="" method="post">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h2>Let's get in touch</h2>
-                  </div>
-                  <div class="col-lg-4">
-                    <fieldset>
-                      <input name="name" type="text" id="name" placeholder="YOURNAME...*" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-4">
-                    <fieldset>
-                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
-                  </fieldset>
-                  </div>
-                  <div class="col-lg-4">
-                    <fieldset>
-                      <input name="subject" type="text" id="subject" placeholder="SUBJECT...*" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="right-info">
-            <ul>
-              <li>
-                <h6>Phone Number</h6>
-                <span>+91 7780518732</span>
-              </li>
-              <li>
-                <h6>Email Address</h6>
-                <span>info@appcreation.edu</span>
-              </li>
-              <li>
-                <h6>Street Address</h6>
-                <span>Somewhere in India</span>
-              </li>
-              <li>
-                <h6>Website URL</h6>
-                <span>www.appcreation.in</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <p>Copyright © 2025 CVThink Co., Ltd. All Rights Reserved. 
-          <br>Design: <a href="https://cvthink.com" target="_parent" title="free css templates">CVthink</a></p>
-    </div>
-  </section>
+  <footer style="background: #ffffff; color: #fff; text-align: center; padding: 20px 0; font-size: 16px;">
+    <p>Copyright &copy; 2025 <a href="https://cvthink.com" style="color: #ffcc00; text-decoration: none; font-weight: bold;">CVThink Ltd.</a> All Rights Reserved.</p>
+</footer>
+
+  
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
