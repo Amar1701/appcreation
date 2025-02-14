@@ -294,145 +294,282 @@
     </style>
 </head>
 <body>
-    <section class="container my-5">
-        <div class="text-center mb-4">
-            <h2>Course Content</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="course-item position-relative">
-                    <span class="badge-category">IOS</span>
-                    <div class="thumb">
-                        <img src="assets/images/yt1.png" alt="iOS Development">
-                    </div>
-                    <div class="down-content">
-                        <h4>About iOS</h4>
-                        <a href="#" class="btn btn-primary">Watch Course</a>
-                    </div>
+
+  <!-- ------------------------------courses------------------------------------ -->
+  <section class="container my-5">
+    <div class="text-center mb-4">
+        <h2>Course Content</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="course-item position-relative">
+                <span class="badge-category">IOS</span>
+                <div class="thumb position-relative">
+                    <a href="https://www.youtube.com/watch?v=ios_video_link" target="_blank">
+                        <img src="assets/images/yt1.png" alt="iOS Development" class="course-img">
+                        <div class="youtube-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="white" d="M10,15L15,12L10,9V15M22,12A10,10 0 1,1 2,12A10,10 0 1,1 22,12Z" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="course-item position-relative">
-                    <span class="badge-category">ANDROID</span>
-                    <div class="thumb">
-                        <img src="assets/images/yt2.png" alt="Android Development">
-                    </div>
-                    <div class="down-content">
-                        <h4>About Android</h4>
-                        <a href="#" class="btn btn-primary">Watch Course</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="course-item position-relative">
-                    <span class="badge-category">PROJECTS</span>
-                    <div class="thumb">
-                        <img src="assets/images/yt3.png" alt="Projects">
-                    </div>
-                    <div class="down-content">
-                        <h4>About Projects</h4>
-                        <a href="#" class="btn btn-primary">Watch Course</a>
-                    </div>
+                <div class="down-content">
+                    <h4>About iOS</h4>
                 </div>
             </div>
         </div>
-    </section>
-</body>
-</html>
+        <div class="col-md-4 col-sm-6">
+            <div class="course-item position-relative">
+                <span class="badge-category">ANDROID</span>
+                <div class="thumb position-relative">
+                    <a href="https://www.youtube.com/watch?v=android_video_link" target="_blank">
+                        <img src="assets/images/yt2.png" alt="Android Development" class="course-img">
+                        <div class="youtube-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="white" d="M10,15L15,12L10,9V15M22,12A10,10 0 1,1 2,12A10,10 0 1,1 22,12Z" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="down-content">
+                    <h4>About Android</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="course-item position-relative">
+                <span class="badge-category">PROJECTS</span>
+                <div class="thumb position-relative">
+                    <a href="https://www.youtube.com/watch?v=projects_video_link" target="_blank">
+                        <img src="assets/images/yt3.png" alt="Projects" class="course-img">
+                        <div class="youtube-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="white" d="M10,15L15,12L10,9V15M22,12A10,10 0 1,1 2,12A10,10 0 1,1 22,12Z" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="down-content">
+                    <h4>About Projects</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .thumb {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .course-img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .youtube-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 0, 0, 0.8);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+    }
+
+    .youtube-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .youtube-icon:hover {
+        background: rgba(255, 0, 0, 1);
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .badge-category {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #ff0000;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        z-index: 10;
+    }
+</style>
 
 
   
-    <!-- Popular Courses Section -->
-    <section class="upcoming-meetings" id="meetings">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <div class="section-heading text-center">
-                      <h2>POPULAR COURSES</h2>
-                  </div>
+<!-- Popular Courses Section -->
+<section class="upcoming-meetings" id="meetings">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="section-heading text-center">
+                  <h2>COURSE DETAILS</h2>
               </div>
-              <div class="col-12">
-                  <div class="row">
-                      <!-- Android App Development Course -->
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                          <div class="meeting-item">
-                              <div class="thumb">
-                                  <div class="price">
-                                      <span>$100.00</span>
-                                  </div>
-                                  <a href="meeting-details.html">
-                                      <img src="assets/images/featured1.jpg" alt="Android App Development">
-                                  </a>
+          </div>
+          <div class="col-12">
+              <div class="row">
+                  <!-- Android App Development Course -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="meeting-item">
+                          <div class="thumb">
+                              <div class="price">
+                                  <span><del>₹22,000</del> ₹13,900</span>
                               </div>
-                              <div class="down-content">
-                                  <div class="date">
-                                      <h6>Mar <span>10</span></h6>
-                                  </div>
-                                  <a href="meeting-details.html">
-                                      <h4>Android App Development</h4>
-                                  </a>
-                                  <a href="meeting-details.html">
-                                      <h6>Click here to know more</h6>
-                                  </a>
-                                  <p>Learn to build modern, high-performance Android apps from scratch using Kotlin and Java. Master UI design, APIs, databases, and deployment to Google Play.</p>
-                              </div>
+                              <a href="meeting-details.html">
+                                  <img src="assets/images/featured1.jpg" alt="Android App Development">
+                              </a>
+                          </div>
+                          <div class="down-content">
+                              <a href="meeting-details.html">
+                                  <h4>ANDROID APPS TRAINING</h4>
+                              </a>
+                              <ul>
+                                  <li>✅Self Learning + Live Mentoring</li>
+                                  <li>✅DMC Certification</li>
+                                  <li>✅1 Year Access To E-learning</li>
+                                  <li>✅10 Capstone & 1 Client Project</li>
+                                  <li>✅Job Assistance</li>
+                                  <li>✅24*7 Learner assistance and support</li>
+                              </ul>
+                              <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
+                              <a class="syllabus-btn" href="#">DOWNLOAD COURSE SYLLABUS</a>
+                              <a class="know-more-btn" href="meeting-details.html">Click Here to Know More</a> <!-- New button -->
                           </div>
                       </div>
-                      
-                      <!-- iOS Development Course -->
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                          <div class="meeting-item">
-                              <div class="thumb">
-                                  <div class="price">
-                                      <span>$100.00</span>
-                                  </div>
-                                  <a href="ios.html">
-                                      <img src="assets/images/featured2.png" alt="iOS Development">
-                                  </a>
-                              </div>
-                              <div class="down-content">
-                                  <div class="date">
-                                      <h6>Mar <span>10</span></h6>
-                                  </div>
-                                  <a href="meeting-details.html">
-                                      <h4>iOS Development Unleashed</h4>
-                                  </a>
-                                  <a href="meeting-details.html">
-                                      <h6>Click here to know more</h6>
-                                  </a>
-                                  <p>Transform your ideas into powerful iOS apps with Swift. Learn intuitive UI design, seamless functionality, and App Store deployment from scratch!</p>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <!-- Project Development Course -->
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                          <div class="meeting-item">
-                              <div class="thumb">
-                                  <div class="price">
-                                      <span>$100.00</span>
-                                  </div>
-                                  <a href="meeting-details.html">
-                                      <img src="assets/images/meeting-03.jpg" alt="Project Development">
-                                  </a>
-                              </div>
-                              <div class="down-content">
-                                  <div class="date">
-                                      <h6>Mar <span>10</span></h6>
-                                  </div>
-                                  <a href="meeting-details.html">
-                                      <h4>Project Development</h4>
-                                  </a>
-                                  <p>Empowering minds with the tools to build tomorrow's innovations on iOS and Android.</p>
-                              </div>
-                          </div>
-                      </div>
-  
                   </div>
+
+                  <!-- iOS Development Course -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="meeting-item">
+                          <div class="thumb">
+                              <div class="price">
+                                  <span><del>₹36,000</del> ₹17,900</span>
+                              </div>
+                              <a href="ios.html">
+                                  <img src="assets/images/featured2.png" alt="iOS Development">
+                              </a>
+                          </div>
+                          <div class="down-content">
+                              <a href="meeting-details.html">
+                                  <h4>IOS APPS TRAINING</h4>
+                              </a>
+                              <ul>
+                                  <li>✅DMC Certification</li>
+                                  <li>✅4-Month | 400 Learning Hours</li>
+                                  <li>✅20-Hour Live Online Training</li>
+                                  <li>✅10 Capstone & 1 Client Project</li>
+                                  <li>✅365 Days Flexi Pass + Cloud Lab</li>
+                                  <li>✅Internship + Job Assistance</li>
+                              </ul>
+                              <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
+                              <a class="syllabus-btn" href="#">DOWNLOAD COURSE SYLLABUS</a>
+                              <a class="know-more-btn" href="ios.html">Click Here to Know More</a> <!-- New button -->
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Project Development Course -->
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                      <div class="meeting-item">
+                          <div class="thumb">
+                              <div class="price">
+                                  <span><del>₹36,000</del> ₹20,900</span>
+                              </div>
+                              <a href="meeting-details.html">
+                                  <img src="assets/images/meeting-03.jpg" alt="Project Development">
+                              </a>
+                          </div>
+                          <div class="down-content">
+                              <a href="meeting-details.html">
+                                  <h4>LIVE PROJECTS TRAINING</h4>
+                              </a>
+                              <ul>
+                                  <li>✅DMC Certification</li>
+                                  <li>✅4-Month | 400 Learning Hours</li>
+                                  <li>✅20-Hour Classroom Sessions</li>
+                                  <li>✅10 Capstone & 1 Client Project</li>
+                                  <li>✅Cloud Lab Access</li>
+                                  <li>✅Internship + Job Assistance</li>
+                              </ul>
+                              <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
+                              <a class="practice-btn" href="#">GOTO PRACTICE</a>
+                              <a class="know-more-btn" href="#">Click Here to Know More</a> <!-- New button -->
+                          </div>
+                      </div>
+                  </div>
+
               </div>
           </div>
       </div>
-    </section>
+  </div>
+</section>
+
+<style>
+.meeting-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.thumb img {
+  width: 100%;
+  border-radius: 10px;
+}
+.price span {
+  background: purple;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.down-content ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.down-content ul li {
+  padding: 5px 0;
+}
+.enquire-btn, .syllabus-btn, .practice-btn, .know-more-btn {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.enquire-btn {
+  background: orange;
+}
+.syllabus-btn {
+  background: pink;
+}
+.practice-btn {
+  background: hotpink;
+}
+.know-more-btn {
+  background: blue; /* Color for the new button */
+}
+</style>
+
+
   
 <!-- Projects Developed by Learners Section -->
 <section class="learners-projects" style="padding-top: 40px; padding-bottom: 40px;">
@@ -787,56 +924,7 @@
 </head>
 <body>
 
-  <section class="video-section">
-    <div class="container">
-        <h2 class="section-title">📚 Project Videos by Our Learners</h2>
-        <p class="section-description">Explore amazing educational projects developed by our talented learners.</p>
-        
-        <div class="video-grid">
-            <!-- Video Items -->
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=hX1I56gyDPM" target="_blank">
-                    <img src="https://img.youtube.com/vi/hX1I56gyDPM/0.jpg" alt="Project Video 1">
-                </a>
-                <h5>AI-Based Learning System</h5>
-                <p>A smart AI-driven platform for self-paced learning.</p>
-            </div>
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=F4fbwKV9dBU" target="_blank">
-                    <img src="https://img.youtube.com/vi/F4fbwKV9dBU/0.jpg" alt="Project Video 2">
-                </a>
-                <h5>Robotics for Kids</h5>
-                <p>An engaging way to introduce robotics to students.</p>
-            </div>
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=ktlTxC4QG8g" target="_blank">
-                    <img src="https://img.youtube.com/vi/ktlTxC4QG8g/0.jpg" alt="Project Video 3">
-                </a>
-                <h5>STEM Education Basics</h5>
-                <p>Exploring STEM concepts in a fun and interactive way.</p>
-            </div>
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=0Bxhkn3w7Jc" target="_blank">
-                    <img src="https://img.youtube.com/vi/0Bxhkn3w7Jc/0.jpg" alt="Project Video 4">
-                </a>
-                <h5>Introduction to Python</h5>
-                <p>Learn the basics of Python programming for beginners.</p>
-            </div>
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=pS3o0UbnD3Y" target="_blank">
-                    <img src="https://img.youtube.com/vi/pS3o0UbnD3Y/0.jpg" alt="Project Video 5">
-                </a>
-                <h5>Build Your Own Website</h5>
-                <p>A step-by-step guide for students to create their own website.</p>
-            </div>
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=UI3ej_cOJGA" target="_blank">
-                    <img src="https://img.youtube.com/vi/UI3ej_cOJGA/0.jpg" alt="Project Video 6">
-                </a>
-                <h5>Science Fair Project Ideas</h5>
-                <p>Innovative science projects for students to explore.</p>
-            </div>
-        </div>
+
 
         <!-- Responsive Image Section with Enhanced UI -->
 <div class="image-container">
@@ -896,87 +984,7 @@
     </div>
 </section>
 
-<style>
-    .container {
-        text-align: center;
-        max-width: 1200px;
-        margin: auto;
-    }
-    .section-title {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    .section-description {
-        font-size: 1.2rem;
-        color: #555;
-        margin-bottom: 30px;
-    }
-    .video-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    .video-card {
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 15px;
-        transition: transform 0.3s ease;
-        text-align: center;
-    }
-    .video-card:hover {
-        transform: translateY(-5px);
-    }
-    .video-card img {
-        width: 100%;
-        border-radius: 8px;
-        max-height: 180px;
-        object-fit: cover;
-    }
-    .video-card h5 {
-        font-size: 1.1rem;
-        margin-top: 10px;
-    }
-    .video-card p {
-        font-size: 0.9rem;
-        color: #666;
-    }
-    
-    /* Responsive Image */
-    .image-container {
-        margin-top: 30px;
-        text-align: center;
-    }
-    .responsive-image {
-        width: 100%;
-        max-width: 1000px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
 
-    /* Responsive Design */
-    @media (min-width: 1024px) {
-        .video-grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-    @media (max-width: 768px) {
-        .video-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-    @media (max-width: 480px) {
-        .video-grid {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .responsive-image {
-            width: 90%;
-        }
-    }
-</style>
 
 <!-- Live Projects & App Download Section -->
 <div class="live-projects-section">
@@ -1372,6 +1380,146 @@
 </html>
 
 <!-- ---------------------------------------- -->
+
+<section class="video-section">
+  <div class="container">
+      <h2 class="section-title">📚 Project Videos by Our Learners</h2>
+      <p class="section-description">Explore amazing educational projects developed by our talented learners.</p>
+      
+      <div class="video-grid">
+          <!-- Video Items -->
+          <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=hX1I56gyDPM" target="_blank">
+                  <img src="https://img.youtube.com/vi/hX1I56gyDPM/0.jpg" alt="Project Video 1">
+              </a>
+              <h5>AI-Based Learning System</h5>
+              <p>A smart AI-driven platform for self-paced learning.</p>
+          </div>
+          <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=F4fbwKV9dBU" target="_blank">
+                  <img src="https://img.youtube.com/vi/F4fbwKV9dBU/0.jpg" alt="Project Video 2">
+              </a>
+              <h5>Robotics for Kids</h5>
+              <p>An engaging way to introduce robotics to students.</p>
+          </div>
+          <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=ktlTxC4QG8g" target="_blank">
+                  <img src="https://img.youtube.com/vi/ktlTxC4QG8g/0.jpg" alt="Project Video 3">
+              </a>
+              <h5>STEM Education Basics</h5>
+              <p>Exploring STEM concepts in a fun and interactive way.</p>
+          </div>
+          <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=0Bxhkn3w7Jc" target="_blank">
+                  <img src="https://img.youtube.com/vi/0Bxhkn3w7Jc/0.jpg" alt="Project Video 4">
+              </a>
+              <h5>Introduction to Python</h5>
+              <p>Learn the basics of Python programming for beginners.</p>
+          </div>
+          <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=pS3o0UbnD3Y" target="_blank">
+                  <img src="https://img.youtube.com/vi/pS3o0UbnD3Y/0.jpg" alt="Project Video 5">
+              </a>
+              <h5>Build Your Own Website</h5>
+              <p>A step-by-step guide for students to create their own website.</p>
+          </div>
+          <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=UI3ej_cOJGA" target="_blank">
+                  <img src="https://img.youtube.com/vi/UI3ej_cOJGA/0.jpg" alt="Project Video 6">
+              </a>
+              <h5>Science Fair Project Ideas</h5>
+              <p>Innovative science projects for students to explore.</p>
+          </div>
+      </div>
+
+
+      <style>
+        .container {
+            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .section-description {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .video-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        .video-card img {
+            width: 100%;
+            border-radius: 8px;
+            max-height: 180px;
+            object-fit: cover;
+        }
+        .video-card h5 {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        .video-card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* Responsive Image */
+        .image-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .responsive-image {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Responsive Design */
+        @media (min-width: 1024px) {
+            .video-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .video-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .responsive-image {
+                width: 90%;
+            }
+        }
+    </style>
+
+
+
+
+
+
  <!-- DEMO -->
 
  <!DOCTYPE html>
@@ -1498,6 +1646,9 @@
  
  </body>
  </html>
+
+  <!-- ---------------------------------------- -->
+   
  
 
 
