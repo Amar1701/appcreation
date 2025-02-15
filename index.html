@@ -181,251 +181,305 @@
     
     <!-- Header Area End -->
 <!-- ***** Main Banner Area Start *****  -->
-  <section class="section main-banner" id="top" data-section="section1">
-    <video autoplay muted loop id="bg-video">
-        <source src="assets/images/firstpagevideo.mp4" type="video/mp4" />
-    </video>
-  
-    <div class="video-overlay header-text">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="caption">
-                        <h6 class="highlight">It is</h6>
-                        <h2 class="main-title">MOBILE APPS TRAINING ACADEMY</h2>
-                        <p class="subtitle">Online Training & <span class="live">LIVE ▶</span> Class Recording</p>
-                        <p class="support">We Support You Until You Get <span class="job">JOB</span> 👍</p>
-                        <h3 class="success">Become a Successful Software Employee <br> by Gaining In-Depth & Strong Knowledge</h3>
-                        <p class="quote">"Don't search for the company, let the company search for you"</p>
-                        <p class="experience">I will share my whole experience with you <br> You will be more than a real-time employee</p>
-                        
-                        <div class="main-buttons">
-                            <a href="https://wa.me/917780518732?text=Hello%2C%20I%20want%20to%20join!" class="btn hero-btn" target="_blank">Join Now</a>
-                            <a href="javascript:void(0);" class="btn hero-btn" onclick="openPopup()">Just Follow My Class Standards</a>
-                        </div>
-                    </div>
-                </div>
+<section class="section main-banner" id="top" data-section="section1">
+  <!-- Responsive background image -->
+  <img src="assets/images/frontpage.jpg" alt="Front Page Banner" class="bg-image" />
+
+  <!-- Overlay for text and buttons -->
+  <!-- <div class="image-overlay header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="caption">
+            <h6 class="highlight">It is</h6>
+            <h2 class="main-title">MOBILE APPS TRAINING ACADEMY</h2>
+            <h3 class="subtitle">
+              Online Training & <span class="live">LIVE ▶</span> Class Recording
+            </h3>
+            <h2 class="support">
+              We Support You Until You Get <span class="job">JOB</span> 👍
+            </h2>
+            <h2 class="success">
+              Become a Successful Software Employee <br />by Gaining In-Depth & Strong Knowledge
+            </h2>
+            <h2 class="quote">
+              "Don't search for the company, let the company search for you"
+            </h2>
+            <h2 class="experience">
+              I will share my whole experience with you <br />You will be more than a real-time employee
+            </h2>
+
+            <div class="main-buttons">
+              <a
+                href="https://wa.me/917780518732?text=Hello%2C%20I%20want%20to%20join!"
+                class="btn hero-btn"
+                target="_blank"
+                >Join Now</a
+              >
+              <a href="javascript:void(0);" class="btn hero-btn" onclick="openPopup()"
+                >Just Follow My Class Standards</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-  </section>
-  
-  <!-- Popup Modal for Class Standards -->
-  <div id="imagePopup" class="popup-overlay">
-    <div class="popup-content">
-        <span class="close-btn" onclick="closePopup()">&times;</span>
-        <img src="assets/images/popup.png" alt="Class Standard" class="popup-img">
+      </div>
     </div>
   </div>
-  
-  <!-- CSS for Styling -->
-  <style>
-    /* General Styling */
-    body {
-      font-family: 'Poppins', sans-serif; /* Modern clean font */
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+</section> -->
+
+<!-- Popup Modal for Class Standards -->
+<div id="imagePopup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <img src="assests/images/popup.png" alt="Class Standard" class="popup-img" />
+  </div>
+</div>
+
+<!-- CSS for Styling -->
+<style>
+  /* General Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Banner Section Styling */
+  .main-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Responsive background image */
+  .bg-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Overlay styling */
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .header-text .caption {
+    color: #fff;
+    text-align: center;
+  }
+
+  .highlight {
+    color: #ff35ff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .main-title {
+    font-size: 50px;
+    font-weight: 800;
+    color: #ffcc00;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+  }
+
+  .subtitle,
+  .support {
+    font-size: 24px;
+    color: #d0b2f6;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  .live {
+    background: #0f0;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  .job {
+    color: #00ff00;
+    font-weight: bold;
+  }
+
+  .success {
+    font-size: 30px;
+    font-weight: 700;
+    color: #7f58ff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+  }
+
+  .quote {
+    font-size: 22px;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+  }
+
+  .experience {
+    font-size: 20px;
+    color: #ff66cc;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+
+  /* Button Styling */
+  .main-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+    z-index: 9999;
+  }
+
+  .hero-btn {
+    background: linear-gradient(45deg, #ff66cc, #ff3385);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  .hero-btn:hover {
+    background: linear-gradient(45deg, #ff3385, #ff66cc);
+    transform: translateY(-5px);
+  }
+
+  .hero-btn:active {
+    transform: translateY(1px);
+  }
+
+  /* Popup Styling */
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 80%;
+    width: 500px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+
+  .popup-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #555;
+  }
+
+  .close-btn:hover {
+    color: red;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-title {
+      font-size: 40px;
     }
-  
-    .highlight { 
-      color: #ffcc00; 
-      font-size: 28px; 
-      font-weight: 700; 
-      letter-spacing: 2px; 
+
+    .subtitle,
+    .support {
+      font-size: 22px;
     }
-  
-    .main-title { 
-      font-size: 50px; 
-      font-weight: 800; 
-      color: #ffcc00; 
-      text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5); 
-      margin-top: 20px; 
+
+    .success {
+      font-size: 24px;
     }
-  
-    .subtitle, .support { 
-      font-size: 24px; 
-      color: #fff; 
-      font-weight: 400;
-      margin-bottom: 15px;
-    }
-  
-    .live { 
-      background: #0f0; 
-      color: #000; 
-      padding: 8px 20px; 
-      border-radius: 8px; 
-      font-weight: bold;
-    }
-  
-    .job { 
-      color: #00ff00; 
-      font-weight: bold; 
-    }
-  
-    .success { 
-      font-size: 30px; 
-      font-weight: 700; 
-      color: #7f58ff; 
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
-      margin-top: 20px; 
-    }
-  
-    .quote { 
-      font-size: 22px; 
-      font-style: italic; 
-      color: #fff; 
-      text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); 
-      margin-bottom: 20px;
-    }
-  
-    .experience { 
-      font-size: 20px; 
-      color: #ff66cc; 
-      font-weight: 500; 
-      margin-bottom: 25px;
-    }
-  
-    /* Button Styling */
-    .main-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 25px;
-      z-index: 9999; /* Ensure buttons are above the video */
-    }
-  
-    .hero-btn {
-      background: linear-gradient(45deg, #ff66cc, #ff3385);
-      color: #fff;
+
+    .quote {
       font-size: 18px;
-      font-weight: 600;
-      padding: 15px 40px;
-      border-radius: 50px;
-      text-decoration: none;
-      text-transform: uppercase;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-      transition: all 0.3s ease;
     }
-  
-    .hero-btn:hover {
-      background: linear-gradient(45deg, #ff3385, #ff66cc);
-      transform: translateY(-5px); /* Slight lift effect on hover */
+
+    .experience {
+      font-size: 18px;
     }
-  
-    .hero-btn:active {
-      transform: translateY(1px); /* Button pressed effect */
+
+    .main-buttons {
+      flex-direction: column;
+      gap: 15px;
     }
-  
-    /* Popup Styling */
-    .popup-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
+
+    .hero-btn {
+      padding: 12px 30px;
     }
-  
-    .popup-content {
-        background: #fff;
-        padding: 30px;
-        border-radius: 15px;
-        text-align: center;
-        max-width: 80%;
-        width: 500px;
-        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (max-width: 480px) {
+    .main-title {
+      font-size: 30px;
     }
-  
-    .popup-img {
-        width: 100%;
-        max-height: 400px;
-        object-fit: contain;
-        border-radius: 10px;
+
+    .subtitle,
+    .support {
+      font-size: 20px;
     }
-  
-    .close-btn {
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        font-size: 30px;
-        cursor: pointer;
-        color: #555;
+
+    .quote {
+      font-size: 16px;
     }
-  
-    .close-btn:hover {
-        color: red;
+
+    .experience {
+      font-size: 14px;
     }
-  
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .main-title {
-        font-size: 40px;
-      }
-  
-      .subtitle, .support {
-        font-size: 22px;
-      }
-  
-      .success {
-        font-size: 24px;
-      }
-  
-      .quote {
-        font-size: 18px;
-      }
-  
-      .experience {
-        font-size: 18px;
-      }
-  
-      .main-buttons {
-        flex-direction: column;
-        gap: 15px;
-      }
-  
-      .hero-btn {
-        padding: 12px 30px;
-      }
+
+    .hero-btn {
+      padding: 10px 25px;
+      font-size: 16px;
     }
-  
-    @media (max-width: 480px) {
-      .main-title {
-        font-size: 30px;
-      }
-  
-      .subtitle, .support {
-        font-size: 20px;
-      }
-  
-      .quote {
-        font-size: 16px;
-      }
-  
-      .experience {
-        font-size: 14px;
-      }
-  
-      .hero-btn {
-        padding: 10px 25px;
-        font-size: 16px;
-      }
-    }
-  </style>
-  
-  <!-- JavaScript for Popup -->
-  <script>
-    function openPopup() {
-        document.getElementById("imagePopup").style.display = "flex";
-    }
-    function closePopup() {
-        document.getElementById("imagePopup").style.display = "none";
-    }
-  </script>
+  }
+</style>
+
+<!-- JavaScript for Popup -->
+<script>
+  function openPopup() {
+    document.getElementById("imagePopup").style.display = "flex";
+  }
+  function closePopup() {
+    document.getElementById("imagePopup").style.display = "none";
+  }
+</script>
 
 
   <!------------------------------- Video & Image Section -->
