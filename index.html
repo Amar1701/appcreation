@@ -183,49 +183,41 @@
 <!-- ***** Main Banner Area Start *****  -->
 <section class="section main-banner" id="top" data-section="section1">
   <!-- Responsive background image -->
-  <img src="assets/images/frontpage.jpg" alt="Front Page Banner" class="bg-image" />
+  <picture>
+    <!-- Image for large screens -->
+    <source srcset="assets/images/frontpage.jpg" media="(min-width: 768px)" />
+    <!-- Image for mobile screens -->
+    <img src="assets/images/frontpage1.jpg" alt="Front Page Banner" class="bg-image" />
+  </picture>
+</section>
 
-  <!-- Overlay for text and buttons -->
-  <!-- <div class="image-overlay header-text">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="caption">
-            <h6 class="highlight">It is</h6>
-            <h2 class="main-title">MOBILE APPS TRAINING ACADEMY</h2>
-            <h3 class="subtitle">
-              Online Training & <span class="live">LIVE ▶</span> Class Recording
-            </h3>
-            <h2 class="support">
-              We Support You Until You Get <span class="job">JOB</span> 👍
-            </h2>
-            <h2 class="success">
-              Become a Successful Software Employee <br />by Gaining In-Depth & Strong Knowledge
-            </h2>
-            <h2 class="quote">
-              "Don't search for the company, let the company search for you"
-            </h2>
-            <h2 class="experience">
-              I will share my whole experience with you <br />You will be more than a real-time employee
-            </h2>
+<!-- CSS for Styling -->
+<style>
+  /* General Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-            <div class="main-buttons">
-              <a
-                href="https://wa.me/917780518732?text=Hello%2C%20I%20want%20to%20join!"
-                class="btn hero-btn"
-                target="_blank"
-                >Join Now</a
-              >
-              <a href="javascript:void(0);" class="btn hero-btn" onclick="openPopup()"
-                >Just Follow My Class Standards</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
+  /* Banner Section Styling */
+  .main-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Responsive Image Styling */
+  .bg-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>
+
+
+  
 
 <!-- Popup Modal for Class Standards -->
 <div id="imagePopup" class="popup-overlay">
