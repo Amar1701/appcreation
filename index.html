@@ -30,29 +30,31 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            font-size: 18px;
+            font-size: 14px;
             flex-wrap: wrap;
         }
         .contact-info {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
         .contact-info span {
             color: white;
             text-decoration: none;
-            margin-bottom: 5px;
+            white-space: nowrap;
         }
         .contact-info i {
             color: #e74c3c;
-            margin-right: 10px;
+            margin-right: 8px;
         }
         .social-media {
             display: flex;
-            gap: 25px;
+            gap: 15px;
+            flex-wrap: wrap;
         }
         .social-media a {
-            font-size: 27px;
+            font-size: 20px;
             color: white;
             text-decoration: none;
         }
@@ -63,17 +65,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 50px;
+            padding: 15px 40px;
         }
         .logo img {
-            width: 270px;
+            width: 235px;
             height: auto;
         }
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 15px;
-            margin-top: 10px;
+            gap: 20px;
         }
         .nav-links li {
             display: inline;
@@ -114,38 +115,52 @@
         }
 
         /* RESPONSIVENESS */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .top-bar {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px;
-                font-size: 16px;
-                background-color: #000000;
-                box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2);
-                position: relative;
-                z-index: 1000;
+                font-size: 14px;
+                padding: 8px 15px;
             }
             .contact-info {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                text-align: left;
+                gap: 10px;
             }
             .social-media {
-                display: flex;
                 gap: 10px;
-                margin-top: 0;
             }
             .navbar {
-                display: flex;
-                justify-content: space-between;
+                padding: 12px 30px;
+            }
+            .logo img {
+                width: 180px;
+            }
+            .nav-links {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 8px;
+                padding: 10px 0;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            .social-media {
+                justify-content: center;
+                gap: 8px;
+            }
+            .navbar {
+                flex-direction: row;
                 align-items: center;
                 padding: 10px 20px;
             }
-            .logo {
-                flex: 1;
+            .menu-toggle {
+                display: block;
             }
             .nav-links {
                 flex-direction: column;
@@ -153,11 +168,17 @@
                 width: 100%;
                 text-align: center;
                 padding: 10px 0;
+                background-color: black;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
             }
             .nav-links.active {
                 display: flex;
             }
-            .menu-toggle {
+            .nav-links a {
+                padding: 12px 0;
                 display: block;
             }
             .desktop-image {
@@ -173,8 +194,8 @@
     <!-- TOP NAVBAR -->
     <div class="top-bar">
         <div class="contact-info">
-            <span><i class="fas fa-phone-alt"></i><i class="fab fa-whatsapp"></i> +91 7780518732 </span>
-            <span><i class="fas fa-envelope"></i> info@example.com</span>
+            <span><i class="fas fa-phone-alt"></i> <i class="fab fa-whatsapp"></i> +91 7780518732 </span>
+            <span><i class="fas fa-envelope"></i> contact@appcreationtechnologies.in</span>
         </div>
         <div class="social-media">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -191,7 +212,7 @@
             <img src="assets/images/logo.png" alt="Website Logo">
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">
-            <i class="fas fa-bars" style="margin-right: 10px;"></i>
+            <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -199,8 +220,15 @@
             <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
+
 
  
 
@@ -396,44 +424,68 @@
 </head>
 <body>
     <!-- Projects Developed by Learners Section -->
-<section class="learners-projects" style="padding: 40px 0;">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <div class="section-heading">
-          <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
-            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-right: 10px; max-width: 150px;"></span>
-            <h4 class="heading-text" style="background: #7b2ff7; color: white; padding: 10px 20px; border-radius: 20px; font-weight: bold; font-style: italic; white-space: nowrap;">
-              Course details
-            </h4>
-            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-left: 10px; max-width: 150px;"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-  @media (max-width: 768px) {
-    .section-heading {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .dotted-line {
-      display: none; /* Hides dotted lines on small screens */
-    }
-    .heading-text {
-      text-align: center;
-      font-size: 16px;
-      padding: 8px 15px;
-    }
-  }
-</style>
-
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Details Section</title>
+        <style>
+            /* Centering Container */
+            .section-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 40px 0;
+                gap: 10px; /* Adds spacing */
+                width: 100%;
+            }
+    
+            /* Dotted Lines */
+            .dotted-line {
+                flex-grow: 1;
+                border-top: 2px dotted black;
+                height: 0;
+                min-width: 100px; /* Ensures visibility on small screens */
+            }
+    
+            /* Heading Box */
+            .heading-text {
+                background: #7b2ff7;
+                color: white;
+                padding: 10px 25px;
+                border-radius: 10px; /* Less curve */
+                font-weight: bold;
+                font-style: italic;
+                font-size: 18px;
+                white-space: nowrap;
+                text-align: center;
+            }
+    
+            /* Mobile Responsive */
+            @media (max-width: 480px) {
+                .dotted-line {
+                    min-width: 50px; /* Ensures it still shows */
+                }
+    
+                .heading-text {
+                    font-size: 16px;
+                    padding: 8px 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <section class="section-container">
+            <span class="dotted-line"></span>
+            <h4 class="heading-text">COURSE DETAILS</h4>
+            <span class="dotted-line"></span>
+        </section>
+    
+    </body>
+    </html>
+    
 
 
   
@@ -464,15 +516,16 @@
                                   <h4>ANDROID APPS TRAINING</h4>
                               </a>
                               <ul>
-                                  <li>✅Self Learning + Live Mentoring</li>
-                                  <li>✅DMC Certification</li>
-                                  <li>✅1 Year Access To E-learning</li>
-                                  <li>✅10 Capstone & 1 Client Project</li>
-                                  <li>✅Job Assistance</li>
-                                  <li>✅24*7 Learner assistance and support</li>
+                                  <li>✔️Self Learning + Live Mentoring</li>
+                                  <li>✔️DMC Certification</li>
+                                  <li>✔️1 Year Access To E-learning</li>
+                                  <li>✔️10 Capstone & 1 Client Project</li>
+                                  <li>✔️Job Assistance</li>
+                                  <li>✔️24*7 Learner assistance and support</li>
                               </ul>
                               <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
-                              <a class="syllabus-btn" href="#">DOWNLOAD COURSE SYLLABUS</a>
+                              <a class="syllabus-btn" href="assets/pdf/android_tutorial.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a>
+
                               <a class="know-more-btn" href="meeting-details.html">Click Here to Know More</a> <!-- New button -->
                           </div>
                       </div>
@@ -494,15 +547,15 @@
                                   <h4>IOS APPS TRAINING</h4>
                               </a>
                               <ul>
-                                  <li>✅DMC Certification</li>
-                                  <li>✅4-Month | 400 Learning Hours</li>
-                                  <li>✅20-Hour Live Online Training</li>
-                                  <li>✅10 Capstone & 1 Client Project</li>
-                                  <li>✅365 Days Flexi Pass + Cloud Lab</li>
-                                  <li>✅Internship + Job Assistance</li>
+                                  <li>✔️DMC Certification</li>
+                                  <li>✔️4-Month | 400 Learning Hours</li>
+                                  <li>✔️20-Hour Live Online Training</li>
+                                  <li>✔️10 Capstone & 1 Client Project</li>
+                                  <li>✔️365 Days Flexi Pass + Cloud Lab</li>
+                                  <li>✔️Internship + Job Assistance</li>
                               </ul>
                               <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
-                              <a class="syllabus-btn" href="#">DOWNLOAD COURSE SYLLABUS</a>
+                              <<a class="syllabus-btn" href="assets/pdf/ios_tutorial.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a>
                               <a class="know-more-btn" href="ios.html">Click Here to Know More</a> <!-- New button -->
                           </div>
                       </div>
@@ -524,15 +577,15 @@
                                   <h4>LIVE PROJECTS TRAINING</h4>
                               </a>
                               <ul>
-                                  <li>✅DMC Certification</li>
-                                  <li>✅4-Month | 400 Learning Hours</li>
-                                  <li>✅20-Hour Classroom Sessions</li>
-                                  <li>✅10 Capstone & 1 Client Project</li>
-                                  <li>✅Cloud Lab Access</li>
-                                  <li>✅Internship + Job Assistance</li>
+                                  <li>✔️DMC Certification</li>
+                                  <li>✔️4-Month | 400 Learning Hours</li>
+                                  <li>✔️20-Hour Classroom Sessions</li>
+                                  <li>✔️10 Capstone & 1 Client Project</li>
+                                  <li>✔️Cloud Lab Access</li>
+                                  <li>✔️Internship + Job Assistance</li>
                               </ul>
                               <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
-                              <a class="practice-btn" href="#">GOTO PRACTICE</a>
+                              <a class="syllabus-btn" href="assets/pdf/projects.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a>
                               <a class="know-more-btn" href="#">Click Here to Know More</a> <!-- New button -->
                           </div>
                       </div>
@@ -598,41 +651,68 @@
 
   
 <!-- Projects Developed by Learners Section -->
-<section class="learners-projects" style="padding: 40px 0;">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <div class="section-heading">
-          <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
-            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-right: 10px; max-width: 150px;"></span>
-            <h4 class="heading-text" style="background: #7b2ff7; color: white; padding: 10px 20px; border-radius: 20px; font-weight: bold; font-style: italic; white-space: nowrap;">
-              PROJECTS DEVELOPED BY LEARNERS
-            </h4>
-            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-left: 10px; max-width: 150px;"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Course Details Section</title> -->
+    <style>
+        /* Centering Container */
+        .section-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+            gap: 10px; /* Adds spacing */
+            width: 100%;
+        }
 
-<style>
-  @media (max-width: 768px) {
-    .section-heading {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .dotted-line {
-      display: none; /* Hides dotted lines on small screens */
-    }
-    .heading-text {
-      text-align: center;
-      font-size: 16px;
-      padding: 8px 15px;
-    }
-  }
-</style>
+        /* Dotted Lines */
+        .dotted-line {
+            flex-grow: 1;
+            border-top: 2px dotted black;
+            height: 0;
+            min-width: 100px; /* Ensures visibility on small screens */
+        }
+
+        /* Heading Box */
+        .heading-text {
+            background: #7b2ff7;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 10px; /* Less curve */
+            font-weight: bold;
+            font-style: italic;
+            font-size: 18px;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 480px) {
+            .dotted-line {
+                min-width: 50px; /* Ensures it still shows */
+            }
+
+            .heading-text {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section-container">
+        <span class="dotted-line"></span>
+        <h4 class="heading-text">Project Developed by Learners</h4>
+        <span class="dotted-line"></span>
+    </section>
+
+</body>
+</html>
+
 
 
     <!-- Mobile Scrolling Images Section -->
@@ -746,9 +826,9 @@
   .project-item img {
     width: 100%;
     height: auto;
-    max-width: 200px;
+    max-width: 280px;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 2px;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -1434,47 +1514,70 @@
 
 <!-- ---------------------------------------- -->
 
-<section class="video-section">
-  <div class="container">
-      <!-- <h2 class="section-title">📚 Project Videos by Our Learners</h2> -->
-      <!-- Projects Developed by Learners Section -->
-<section class="learners-projects" style="padding: 40px 0;">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <div class="section-heading">
-          <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
-            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-right: 10px; max-width: 150px;"></span>
-            <h4 class="heading-text" style="background: #7b2ff7; color: white; padding: 10px 20px; border-radius: 20px; font-weight: bold; font-style: italic; white-space: nowrap;">
-              📚 Project Videos by Our Learners
-            </h4>
-            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-left: 10px; max-width: 150px;"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details Section</title>
+    <style>
+        /* Centering Container */
+        .section-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+            gap: 10px; /* Adds spacing */
+            width: 100%;
+        }
 
-<style>
-  @media (max-width: 768px) {
-    .section-heading {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .dotted-line {
-      display: none; /* Hides dotted lines on small screens */
-    }
-    .heading-text {
-      text-align: center;
-      font-size: 16px;
-      padding: 8px 15px;
-    }
-  }
-</style>
+        /* Dotted Lines */
+        .dotted-line {
+            flex-grow: 1;
+            border-top: 2px dotted black;
+            height: 0;
+            min-width: 100px; /* Ensures visibility on small screens */
+        }
 
-      <p class="section-description">Explore amazing educational projects developed by our talented learners.</p>
+        /* Heading Box */
+        .heading-text {
+            background: #7b2ff7;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 10px; /* Less curve */
+            font-weight: bold;
+            font-style: italic;
+            font-size: 18px;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 480px) {
+            .dotted-line {
+                min-width: 50px; /* Ensures it still shows */
+            }
+
+            .heading-text {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section-container">
+        <span class="dotted-line"></span>
+        <h4 class="heading-text">Project Videos by our Learners</h4>
+        <span class="dotted-line"></span>
+    </section>
+
+</body>
+</html>
+
+
+      <!-- <p class="section-description">Explore amazing educational projects developed by our talented learners.</p> -->
       
       <div class="video-grid">
           <!-- Video Items -->
@@ -1795,7 +1898,7 @@
     </div>
   </section> -->
 
-  <footer style="background: #ffffff; color: #fff; text-align: center; padding: 20px 0; font-size: 16px;">
+  <footer style="background: #ffffff; color: #000000; text-align: center; padding: 20px 0; font-size: 16px;">
     <p>Copyright &copy; 2025 <a href="https://cvthink.com" style="color: #ffcc00; text-decoration: none; font-weight: bold;">CVThink Ltd.</a> All Rights Reserved.</p>
 </footer>
 
