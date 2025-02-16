@@ -1,477 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="TemplateMo">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-  <title>App Creation</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
-  <link rel="stylesheet" href="assets/css/owl.css">
-  <link rel="stylesheet" href="assets/css/lightbox.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppCreation Technologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: url('assets/images/index-bg.jpg') no-repeat center center/cover; 
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        /* Overlay to enhance readability */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            z-index: -1;
+        }
+        .navbar {
+            background-color: rgba(21, 183, 164, 0.9);
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+        .text-glow {
+            text-shadow: 0 0 8px currentColor;
+        }
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            color: yellow;
+        }
+        .highlight-text {
+            font-size: 30px;
+            font-weight: bold;
+            color: pink;
+        }
+        .box {
+            background: linear-gradient(45deg, #6a00ff, #aa00ff);
+            display: inline-block;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+        }
+        .live-button {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .footer-text1 {
+            margin-top: 40px;
+            font-size: 20px;
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- Sub Header -->
-  <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<!-- Sub Header -->
-<div class="sub-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-sm-8">
-        <div class="left-content"></div>
-      </div>
-      <div class="col-lg-4 col-sm-4 text-right">
-        <div class="right-icons">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-behance"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-          </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">APPCREATION</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+
+    <!-- Contact Info -->
+    <div class="bg-dark text-light text-center p-2">
+        📞 123-456-7890 | ✉️ eduzone@university.com | 📍 184, Main Collins Street, USA
     </div>
-  </div>
-</div>
 
-<!-- CSS Styling -->
-<style>
-  .sub-header {
-    background: #f8f9fa;
-    padding: 10px 0;
-  }
-
-  .social-icons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .social-icons li {
-    display: inline-block;
-    margin-left: 10px;
-  }
-
-  .social-icons li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    background: #007bff;
-    border-radius: 50%;
-    color: white;
-    font-size: 16px;
-    transition: 0.3s;
-  }
-
-  .social-icons li a:hover {
-    transform: scale(1.1);
-    background: #0056b3;
-  }
-</style>
-
-
-    <!-- ***** Header Area Start ***** -->
-    <!-- ***** Header Area Start ***** -->
-<header class="header-area header-sticky">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <nav class="main-nav">
-          <!-- ***** Logo Start ***** -->
-          <a href="index.html" class="logo">
-            APP CREATION
-          </a>
-          <!-- ***** Logo End ***** -->
-          <!-- ***** Menu Start ***** -->
-          <ul class="nav">
-            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-            <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-            <li class="scroll-to-section"><a href="javascript:void(0);" onclick="openContactPopup()">Contact Us</a></li>
-          </ul>
-          <a class='menu-trigger'>
-            <span>Menu</span>
-          </a>
-          <!-- ***** Menu End ***** -->
-        </nav>
+    <!-- Main Content -->
+    <div class="container text-center mt-5">
+        <div class="title text-glow" style="color: yellow;">APPCREATION TECHNOLOGIES</div>
+        <div class="title text-glow" style="color: #ff35ff;">It is</div>
+        <div class="title text-glow" style="color: cyan;">MOBILE APPS TRAINING ACADEMY</div>
+        <div class="box mt-4">
+            <span class="text-purple">ONLINE TRAINING &</span>
+            <span class="live-button">LIVE ▶</span>
+            <span class="text-purple">CLASS RECORDING</span>
+        </div>
+        <div class="title text-glow" style="color: rgb(0, 128, 255);">WE SUPPORT YOU UNTIL YOU GET JOB</div>
+        <div class="footer-text1 text-glow" style="color: #832eff;">BECOME A SUCCESSFUL SOFTWARE EMPLOYEE BY GAINING IN-DEPTH & STRONG KNOWLEDGE</div>
+      
+        <style>
+          .footer-text {
+              background: linear-gradient(to right, #fff, #d8b6ff);
+              padding: 10px 20px;
+              border-radius: 15px;
+              display: inline-block;
+              font-size: 20px;
+              font-weight: bold;
+              color: #832eff;
+              text-transform: uppercase;
+              text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+          }
+      </style>
+      
+      <div class="footer-text text-glow">
+          "DON'T SEARCH FOR THE COMPANY, LET THE COMPANY SEARCH FOR YOU"
       </div>
+      
+        <div class="footer-text1 text-glow" style="color: #ff0099;">I WILL SHARE MY WHOLE EXPERIENCE WITH YOU</div>
+        <div class="footer-text1 text-glow" style="color: #ff0099;">YOU WILL BE MORE THAN REALTIME EMPLOYEE</div>
     </div>
-  </div>
-</header>
 
-<!-- ***** Contact Popup ***** -->
-<div id="contactPopup" class="popup-overlay">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closeContactPopup()">&times;</span>
-    <h2>Contact Us</h2>
-    <p>Email: example@example.com</p>
-    <p>Phone: +91 1234567890</p>
-    <p>Address: Your Office Address Here</p>
-  </div>
-</div>
-
-<!-- JavaScript for Popups -->
-<script>
-  function openContactPopup() {
-    document.getElementById("contactPopup").style.display = "flex";
-  }
-  function closeContactPopup() {
-    document.getElementById("contactPopup").style.display = "none";
-  }
-</script>
-
-<style>
-
-.popup-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.popup-content {
-  background: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  max-width: 80%;
-  width: 400px;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
-  position: relative; /* Ensure the close button is positioned relative to the popup */
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px; /* Adjusted for better positioning */
-  right: 10px; /* Adjusted for better positioning */
-  font-size: 30px;
-  cursor: pointer;
-  color: #555;
-}
-
-.close-btn:hover {
-  color: red;
-}
-
-</style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
 
-    
-    <!-- Header Area End -->
-<!-- ***** Main Banner Area Start *****  -->
-<section class="section main-banner" id="top" data-section="section1">
-  <!-- Responsive background image -->
-  <picture>
-    <!-- Image for large screens -->
-    <source srcset="assets/images/frontpage.jpg" media="(min-width: 768px)" />
-    <!-- Image for mobile screens -->
-    <img src="assets/images/frontpage1.jpg" alt="Front Page Banner" class="bg-image" />
-  </picture>
-</section>
-
-<!-- CSS for Styling -->
-<style>
-  /* General Styling */
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  /* Banner Section Styling */
-  .main-banner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  /* Responsive Image Styling */
-  .bg-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-</style>
 
 
-  
-
-<!-- Popup Modal for Class Standards -->
-<div id="imagePopup" class="popup-overlay">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
-    <img src="assests/images/popup.png" alt="Class Standard" class="popup-img" />
-  </div>
-</div>
-
-<!-- CSS for Styling -->
-<style>
-  /* General Styling */
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  /* Banner Section Styling */
-  .main-banner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  /* Responsive background image */
-  .bg-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Overlay styling */
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .header-text .caption {
-    color: #fff;
-    text-align: center;
-  }
-
-  .highlight {
-    color: #ff35ff;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
-
-  .main-title {
-    font-size: 50px;
-    font-weight: 800;
-    color: #ffcc00;
-    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
-  }
-
-  .subtitle,
-  .support {
-    font-size: 24px;
-    color: #d0b2f6;
-    font-weight: 400;
-    margin-bottom: 15px;
-  }
-
-  .live {
-    background: #0f0;
-    color: #000;
-    padding: 8px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-  }
-
-  .job {
-    color: #00ff00;
-    font-weight: bold;
-  }
-
-  .success {
-    font-size: 30px;
-    font-weight: 700;
-    color: #7f58ff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
-  }
-
-  .quote {
-    font-size: 22px;
-    font-style: italic;
-    color: #fff;
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-  }
-
-  .experience {
-    font-size: 20px;
-    color: #ff66cc;
-    font-weight: 500;
-    margin-bottom: 25px;
-  }
-
-  /* Button Styling */
-  .main-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 25px;
-    z-index: 9999;
-  }
-
-  .hero-btn {
-    background: linear-gradient(45deg, #ff66cc, #ff3385);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 15px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-  }
-
-  .hero-btn:hover {
-    background: linear-gradient(45deg, #ff3385, #ff66cc);
-    transform: translateY(-5px);
-  }
-
-  .hero-btn:active {
-    transform: translateY(1px);
-  }
-
-  /* Popup Styling */
-  .popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-
-  .popup-content {
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    max-width: 80%;
-    width: 500px;
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
-    position: relative;
-  }
-
-  .popup-img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: contain;
-    border-radius: 10px;
-  }
-
-  .close-btn {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    color: #555;
-  }
-
-  .close-btn:hover {
-    color: red;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .main-title {
-      font-size: 40px;
-    }
-
-    .subtitle,
-    .support {
-      font-size: 22px;
-    }
-
-    .success {
-      font-size: 24px;
-    }
-
-    .quote {
-      font-size: 18px;
-    }
-
-    .experience {
-      font-size: 18px;
-    }
-
-    .main-buttons {
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .hero-btn {
-      padding: 12px 30px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .main-title {
-      font-size: 30px;
-    }
-
-    .subtitle,
-    .support {
-      font-size: 20px;
-    }
-
-    .quote {
-      font-size: 16px;
-    }
-
-    .experience {
-      font-size: 14px;
-    }
-
-    .hero-btn {
-      padding: 10px 25px;
-      font-size: 16px;
-    }
-  }
-</style>
-
-<!-- JavaScript for Popup -->
-<script>
-  function openPopup() {
-    document.getElementById("imagePopup").style.display = "flex";
-  }
-  function closePopup() {
-    document.getElementById("imagePopup").style.display = "none";
-  }
-</script>
 
 
   <!------------------------------- Video & Image Section -->
@@ -680,7 +341,7 @@
             background: #6a0dad;
             color: white;
             padding: 5px 10px;
-            border-radius: 5px;
+            border-radius: 10px;
         }
         @media (max-width: 768px) {
             .course-item {
@@ -692,118 +353,126 @@
 <body>
 
   <!-- ------------------------------courses------------------------------------ -->
-  <section class="container my-5">
-    <div class="text-center mb-4">
-        <h2>Course Content</h2>
-    </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Course Details Heading</title> -->
+    <style>
+        .course-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .course-heading::before,
+        .course-heading::after {
+            content: "";
+            flex-grow: 1;
+            height: 2px;
+            background: black;
+            border-top: 2px dotted black;
+        }
+
+        .course-heading span {
+            background: #7d21ff;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+
+        .arrow {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            transform: rotate(135deg);
+        }
+
+        .course-heading::before {
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .course-heading::before::after {
+            content: "";
+            position: absolute;
+            left: -12px;
+            top: -6px;
+            width: 12px;
+            height: 12px;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            transform: rotate(-45deg);
+        }
+
+        .course-heading::after {
+            margin-left: 10px;
+            position: relative;
+        }
+
+        
+
+        .course-heading::after::after {
+            content: "";
+            position: absolute;
+            right: -12px;
+            top: -6px;
+            width: 12px;
+            height: 12px;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            transform: rotate(135deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Projects Developed by Learners Section -->
+<section class="learners-projects" style="padding: 40px 0;">
+  <div class="container">
     <div class="row">
-        <div class="col-md-4 col-sm-6">
-            <div class="course-item position-relative">
-                <span class="badge-category">IOS</span>
-                <div class="thumb position-relative">
-                    <a href="https://www.youtube.com/watch?v=ios_video_link" target="_blank">
-                        <img src="assets/images/yt1.png" alt="iOS Development" class="course-img">
-                        <div class="youtube-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path fill="white" d="M10,15L15,12L10,9V15M22,12A10,10 0 1,1 2,12A10,10 0 1,1 22,12Z" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-                <div class="down-content">
-                    <h4>About iOS</h4>
-                </div>
-            </div>
+      <div class="col-12 text-center">
+        <div class="section-heading">
+          <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-right: 10px; max-width: 150px;"></span>
+            <h4 class="heading-text" style="background: #7b2ff7; color: white; padding: 10px 20px; border-radius: 20px; font-weight: bold; font-style: italic; white-space: nowrap;">
+              Course details
+            </h4>
+            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-left: 10px; max-width: 150px;"></span>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="course-item position-relative">
-                <span class="badge-category">ANDROID</span>
-                <div class="thumb position-relative">
-                    <a href="https://www.youtube.com/watch?v=android_video_link" target="_blank">
-                        <img src="assets/images/yt2.png" alt="Android Development" class="course-img">
-                        <div class="youtube-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path fill="white" d="M10,15L15,12L10,9V15M22,12A10,10 0 1,1 2,12A10,10 0 1,1 22,12Z" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-                <div class="down-content">
-                    <h4>About Android</h4>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="course-item position-relative">
-                <span class="badge-category">PROJECTS</span>
-                <div class="thumb position-relative">
-                    <a href="https://www.youtube.com/watch?v=projects_video_link" target="_blank">
-                        <img src="assets/images/yt3.png" alt="Projects" class="course-img">
-                        <div class="youtube-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path fill="white" d="M10,15L15,12L10,9V15M22,12A10,10 0 1,1 2,12A10,10 0 1,1 22,12Z" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-                <div class="down-content">
-                    <h4>About Projects</h4>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <style>
-    .thumb {
-        position: relative;
-        display: inline-block;
-        width: 100%;
+  @media (max-width: 768px) {
+    .section-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
-    .course-img {
-        width: 100%;
-        border-radius: 10px;
+    .dotted-line {
+      display: none; /* Hides dotted lines on small screens */
     }
-
-    .youtube-icon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(255, 0, 0, 0.8);
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.3s ease-in-out;
+    .heading-text {
+      text-align: center;
+      font-size: 16px;
+      padding: 8px 15px;
     }
-
-    .youtube-icon svg {
-        width: 30px;
-        height: 30px;
-    }
-
-    .youtube-icon:hover {
-        background: rgba(255, 0, 0, 1);
-        transform: translate(-50%, -50%) scale(1.1);
-    }
-
-    .badge-category {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        background: #ff0000;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 14px;
-        font-weight: bold;
-        z-index: 10;
-    }
+  }
 </style>
+
+</body>
+</html>
 
 
   
@@ -812,9 +481,9 @@
   <div class="container">
       <div class="row">
           <div class="col-12">
-              <div class="section-heading text-center">
+              <!-- <div class="section-heading text-center">
                   <h2>COURSE DETAILS</h2>
-              </div>
+              </div> -->
           </div>
           <div class="col-12">
               <div class="row">
@@ -968,15 +637,42 @@
 
   
 <!-- Projects Developed by Learners Section -->
-<section class="learners-projects" style="padding-top: 40px; padding-bottom: 40px;">
+<section class="learners-projects" style="padding: 40px 0;">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
         <div class="section-heading">
-          <h4>Projects Developed by our Learners</h4>
+          <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-right: 10px; max-width: 150px;"></span>
+            <h4 class="heading-text" style="background: #7b2ff7; color: white; padding: 10px 20px; border-radius: 20px; font-weight: bold; font-style: italic; white-space: nowrap;">
+              PROJECTS DEVELOPED BY LEARNERS
+            </h4>
+            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-left: 10px; max-width: 150px;"></span>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .section-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .dotted-line {
+      display: none; /* Hides dotted lines on small screens */
+    }
+    .heading-text {
+      text-align: center;
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  }
+</style>
+
 
     <!-- Mobile Scrolling Images Section -->
     <div class="row">
@@ -1166,7 +862,7 @@
     cursor: not-allowed;
   }
 </style>
-
+</section>
 
   
 
@@ -1779,7 +1475,44 @@
 
 <section class="video-section">
   <div class="container">
-      <h2 class="section-title">📚 Project Videos by Our Learners</h2>
+      <!-- <h2 class="section-title">📚 Project Videos by Our Learners</h2> -->
+      <!-- Projects Developed by Learners Section -->
+<section class="learners-projects" style="padding: 40px 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-heading">
+          <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-right: 10px; max-width: 150px;"></span>
+            <h4 class="heading-text" style="background: #7b2ff7; color: white; padding: 10px 20px; border-radius: 20px; font-weight: bold; font-style: italic; white-space: nowrap;">
+              📚 Project Videos by Our Learners
+            </h4>
+            <span class="dotted-line" style="flex-grow: 1; border-bottom: 2px dotted black; margin-left: 10px; max-width: 150px;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .section-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .dotted-line {
+      display: none; /* Hides dotted lines on small screens */
+    }
+    .heading-text {
+      text-align: center;
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  }
+</style>
+
       <p class="section-description">Explore amazing educational projects developed by our talented learners.</p>
       
       <div class="video-grid">
@@ -2010,14 +1743,14 @@
  <body>
  
      <!-- Popup for Join Demo -->
-<!--      <div id="popup">
+     <!-- <div id="popup">
          <div id="popup-content">
-             <button class="close-btn" onclick="closePopup()">&times;</button> <!-- Close Button -->
-             <!-- <h2>Join Our Demo Session!</h2>
-             <p>Click the button below to join the demo via WhatsApp.</p> -->
-<!--              <button id="join-button" onclick="redirectToWhatsApp()">Join Now</button>
+             <button class="close-btn" onclick="closePopup()">&times;</button> 
+             <h2>Join Our Demo Session!</h2>
+             <p>Click the button below to join the demo via WhatsApp.</p>
+             <button id="join-button" onclick="redirectToWhatsApp()">Join Now</button>
          </div>
-     </div> --> 
+     </div> -->
  
      <script>
          // Function to show popup on page load
