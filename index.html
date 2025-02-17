@@ -1258,7 +1258,7 @@
 
 <!-- Image Container -->
 <div class="image-container">
-  <img src="assets/images/project.png" alt="Project Info" class="responsive-image">
+  <img src="assets/images/projects.png" alt="Project Info" class="responsive-image">
 </div>
 
 <style>
@@ -1280,7 +1280,7 @@
 
   .responsive-image {
       width: 100%;
-      max-width: 1200px;
+      max-width: 1500px;
       height: auto;
       border-radius: 10px;
       object-fit: cover;
@@ -1315,16 +1315,16 @@
 <!-- Live Projects & App Download Section -->
 <div class="live-projects-section">
     <button class="live-projects-btn">
-        🚀 LIVE PROJECTS FOR PRACTICE WHICH ARE IN LIVE ON
+         LIVE PROJECTS FOR PRACTICE 
     </button>
-    <span class="emoji">👉</span> <!-- Default emoji -->
+    <!-- <span class="emoji">👉</span> 
     <div class="app-buttons">
         <a href="#" class="app-link">
             <img src="assets/images/app-store.png" alt="Download on the App Store" class="download-img">
         </a>
         <a href="#" class="app-link">
             <img src="assets/images/google-play.png" alt="Get it on Google Play" class="download-img">
-        </a>
+        </a> -->
     </div>
   </div>
   
@@ -1337,9 +1337,9 @@
         gap: 15px;
         margin-top: 40px;
         padding: 20px;
-        background: #f8f9fa;
+        background: #fef4f4;
         border-radius: 10px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
     }
   
     .live-projects-btn {
@@ -1356,7 +1356,7 @@
   
     .live-projects-btn:hover {
         transform: scale(1.05);
-        box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+        /* box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3); */
     }
   
     .emoji {
@@ -1397,7 +1397,7 @@
     }
   </style>
   
-  <script>
+  <!-- <script>
     function updateEmoji() {
         let emojiElement = document.querySelector(".emoji");
         if (window.innerWidth <= 768) {
@@ -1405,14 +1405,14 @@
         } else {
             emojiElement.innerHTML = "👉"; // Default right arrow for larger screens
         }
-    }
+    } -->
   
-    // Run on page load
+    <!-- // Run on page load
     updateEmoji();
   
     // Run when window resizes
     window.addEventListener("resize", updateEmoji);
-  </script>
+  </script> -->
   
   
  
@@ -1424,389 +1424,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Showcase</title>
     <style>
-        /* Default Light Theme */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5;
-            color: #fffbfb;
-            transition: background-color 0.3s, color 0.3s;
+            background-color: #ffffff;
+            color: #000000;
         }
 
-        /* Section with Background Image */
+        /* Desktop Layout: 2x2 Grid */
         .project-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             padding: 50px 20px;
-            z-index: 1; /* Ensure content is on top of the overlay */
-            background-image: url('assets/images/background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            position: relative;
         }
 
-        /* Adding a dark overlay to reduce contrast */
-        .project-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-            z-index: -1; /* Keep it behind the content */
+        /* Mobile: Show one image at a time with full visibility */
+        @media (max-width: 768px) {
+            .project-container {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                gap: 10px;
+                padding: 20px;
+                scroll-behavior: smooth;
+            }
+            .project-card {
+                flex: 0 0 100%;
+                scroll-snap-align: center;
+            }
         }
 
         .project-card {
-            width: 380px;
-            background: #fff;
+            background: #f8f9fa;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .project-header {
-            text-align: center;
-            margin-bottom: 15px;
-            background: linear-gradient(45deg, #0e0d0d, #bda113, #6a5acd, #32cd32);
-            padding: 10px;
-            border-radius: 10px;
-            color: white;
-        }
-
-        .project-badge {
-            background: #3b5998;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
-
-        .project-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-        .project-name {
-            font-size: 22px;
-            color: #000000;
-            font-weight: bold;
-        }
-
-        .project-content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .project-description {
-            max-width: 60%;
-        }
-
-        .project-description h4 {
-            background: #3b5998;
-            color: white;
-            padding: 5px 10px;
-            display: inline-block;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        .highlight-text {
-            font-size: 16px;
-            font-weight: bold;
-            color: #f39c12;
         }
 
         .project-image img {
             width: 100%;
-            max-width: 180px;
             border-radius: 10px;
         }
-
-        .start-button {
-            /* background: #ffffff; */
-            color: white;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 15px;
-            transition: 0.3s;
-        }
-
-        .start-button:hover {
-            background: #ffffff;
-            transform: scale(1.05);
-        }
-
-        /* Responsive layout for larger screens */
-        @media (min-width: 768px) {
-            .project-card {
-                width: calc(50% - 40px);
-            }
-        }
-
-        /* Dark Theme */
-        body.dark-mode {
-            background-color: #181818;
-            color: #fff;
-        }
-
-        body.dark-mode .project-card {
-            background: #2c2f36;
-            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
-        }
-
-        body.dark-mode .project-badge {
-            background: #1a73e8;
-        }
-
-        body.dark-mode .project-title {
-            color: #f1f1f1;
-        }
-
-        body.dark-mode .project-name {
-            color: #ff5722;
-        }
-
-        body.dark-mode .highlight-text {
-            color: #ffeb3b;
-        }
-
-        body.dark-mode .start-button {
-            background: #ffffff;
-        }
-
-        body.dark-mode .start-button:hover {
-            background: #ffffff;
-        }
-
-        /* Alternate Theme */
-        body.alternate-mode {
-            background-color: #ffeb3b;
-            color: #333;
-        }
-
-        body.alternate-mode .project-card {
-            background: #ff5722;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        body.alternate-mode .project-badge {
-            background: #3b5998;
-        }
-
-        body.alternate-mode .project-title {
-            color: #ffffff;
-        }
-
-        body.alternate-mode .project-name {
-            color: #000000;
-        }
-
-        body.alternate-mode .highlight-text {
-            color: #f39c12;
-        }
-
-        body.alternate-mode .start-button {
-            background: #ffffff;
-        }
-
-        body.alternate-mode .start-button:hover {
-            background: #eaeaea;
-        }
-        /* Make the background fully white */
-body {
-    background-color: #ffffff !important; /* White background */
-    color: #000000; /* Set text color to black for readability */
-}
-
-/* Remove or update the dark overlay */
-.project-container::before {
-    background: rgba(255, 255, 255, 0.9) !important; /* White overlay or remove it */
-}
-
-/* Ensure the cards have proper contrast */
-.project-card {
-    background: #f8f9fa !important; /* Light grey to differentiate */
-    color: #000000; /* Black text */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Update the text styles for better contrast */
-.project-header {
-    background: linear-gradient(45deg, #ffcc00, #ff6600); /* Optional: New gradient */
-}
-
-.project-title,
-.project-name,
-.project-description p {
-    color: #000000 !important; /* Ensure black text for readability */
-}
-
-/* Optional: Remove dark mode overrides */
-body.dark-mode {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-}
-
-body.dark-mode .project-card {
-    background: #f8f9fa !important;
-    color: #000000 !important;
-}
-
     </style>
 </head>
 <body>
 
     <div class="project-container">
+        <!-- Project 1 -->
         <div class="project-card">
-            <div class="project-header">
-                <span class="project-badge">PROJECT FOR PRACTICE</span>
-                <h2 class="project-title">Project No: <span>1</span></h2>
-                <h3 class="project-name">RealEstate App</h3>
+            <div class="project-image">
+                <img src="assets/images/p1.png" alt="Project 1">
             </div>
-            <div class="project-content">
-                <div class="project-description">
-                    <!-- <h4>PROJECT DESCRIPTION:</h4> -->
-                    <p class="highlight-text">Easy way to buy, rent & sell your property by using this app</p>
-                    <p>Buying, renting, and selling your property has never been easier. Just a single click for all your home purchase or rental needs.</p>
-                </div>
-                <div class="project-image">
-                    <img src="assets/images/app.png" alt="Real Estate App">
-                </div>
-            </div>
-            <!-- Replace the button with an image -->
-<a href="#" class="start-button">
-    <img src="assets/images/start-button.png" alt="Start Project" class="start-button-img">
-</a>
-
         </div>
 
+        <!-- Project 2 -->
         <div class="project-card">
-            <div class="project-header">
-                <span class="project-badge">PROJECT FOR PRACTICE</span>
-                <h2 class="project-title">Project No: <span>2</span></h2>
-                <h3 class="project-name">E-Commerce App</h3>
+            <div class="project-image">
+                <img src="assets/images/p2.png" alt="Project 2">
             </div>
-            <div class="project-content">
-                <div class="project-description">
-                    <!-- <h4>PROJECT DESCRIPTION:</h4> -->
-                    <p class="highlight-text">Seamless shopping experience for all your needs</p>
-                    <p>Shop from thousands of products with secure payment options and easy returns.</p>
-                </div>
-                <div class="project-image">
-                    <img src="assets/images/app.png" alt="E-Commerce App">
-                </div>
-            </div>
-            <!-- Replace the button with an image -->
-<a href="#" class="start-button">
-    <img src="assets/images/start-button.png" alt="Start Project" class="start-button-img">
-</a>
-
         </div>
 
+        <!-- Project 3 -->
         <div class="project-card">
-            <div class="project-header">
-                <span class="project-badge">PROJECT FOR PRACTICE</span>
-                <h2 class="project-title">Project No: <span>3</span></h2>
-                <h3 class="project-name">Fitness Tracker</h3>
+            <div class="project-image">
+                <img src="assets/images/p3.png" alt="Project 3">
             </div>
-            <div class="project-content">
-                <div class="project-description">
-                    <!-- <h4>PROJECT DESCRIPTION:</h4> -->
-                    <p class="highlight-text">Track your fitness goals and progress</p>
-                    <p>Keep track of your workouts, meals, and health metrics with this easy-to-use app.</p>
-                </div>
-                <div class="project-image">
-                    <img src="assets/images/app.png" alt="Fitness Tracker">
-                </div>
-            </div>
-            <!-- Replace the button with an image -->
-<a href="#" class="start-button">
-    <img src="assets/images/start-button.png" alt="Start Project" class="start-button-img">
-</a>
-
         </div>
 
+        <!-- Project 4 -->
         <div class="project-card">
-            <div class="project-header">
-                <span class="project-badge">PROJECT FOR PRACTICE</span>
-                <h2 class="project-title">Project No: <span>4</span></h2>
-                <h3 class="project-name">Task Manager</h3>
+            <div class="project-image">
+                <img src="assets/images/p4.png" alt="Project 4">
             </div>
-            <div class="project-content">
-                <div class="project-description">
-                    <!-- <h4>PROJECT DESCRIPTION:</h4> -->
-                    <p class="highlight-text">Manage tasks and projects easily</p>
-                    <p>Organize your work, set deadlines, and track progress with this simple yet powerful app.</p>
-                </div>
-                <div class="project-image">
-                    <img src="assets/images/app.png" alt="Task Manager">
-                </div>
-            </div>
-            <!-- Replace the button with an image -->
-<a href="#" class="start-button">
-    <img src="assets/images/start-button.png" alt="Start Project" class="start-button-img">
-</a>
-
         </div>
     </div>
 
-    <script>
-        function toggleTheme(theme) {
-            document.body.classList.remove('light-mode', 'dark-mode', 'alternate-mode');
-            document.body.classList.add(theme + '-mode');
-        }
-    </script>
-    <style>
-
-        /* Style for the image button */
-.start-button {
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-}
-
-.start-button-img {
-    width: 100%;
-    max-width: 210px; /* Adjust as needed */
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-/* Hover Effect */
-.start-button-img:hover {
-    transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .start-button-img {
-        max-width: 140px; /* Smaller on mobile */
-    }
-}
-
-    </style>
-
 </body>
 </html>
+
+
+
 
 <!-- ---------------------------------------- -->
 
