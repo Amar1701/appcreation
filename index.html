@@ -209,7 +209,7 @@
     <!-- MAIN NAVBAR -->
     <nav class="navbar">
         <div class="logo">
-            <img src="assets/images/logo.png" alt="Website Logo">
+            <img src="assets/images/logo3.png" alt="Website Logo">
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
@@ -423,68 +423,82 @@
     </style>
 </head>
 <body>
-    <!-- Projects Developed by Learners Section -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Course Details Section</title>
-        <style>
-            /* Centering Container */
-            .section-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 40px 0;
-                gap: 10px; /* Adds spacing */
-                width: 100%;
-            }
-    
-            /* Dotted Lines */
-            .dotted-line {
-                flex-grow: 1;
-                border-top: 2px dotted black;
-                height: 0;
-                min-width: 100px; /* Ensures visibility on small screens */
-            }
-    
-            /* Heading Box */
-            .heading-text {
-                background: #7b2ff7;
-                color: white;
-                padding: 10px 25px;
-                border-radius: 10px; /* Less curve */
-                font-weight: bold;
-                font-style: italic;
-                font-size: 18px;
-                white-space: nowrap;
-                text-align: center;
-            }
-    
-            /* Mobile Responsive */
-            @media (max-width: 480px) {
-                .dotted-line {
-                    min-width: 50px; /* Ensures it still shows */
-                }
-    
-                .heading-text {
-                    font-size: 16px;
-                    padding: 8px 15px;
-                }
-            }
-        </style>
-    </head>
-    <body>
-    
-        <section class="section-container">
-            <span class="dotted-line"></span>
-            <h4 class="heading-text">COURSE DETAILS</h4>
-            <span class="dotted-line"></span>
-        </section>
-    
-    </body>
-    </html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Course Details Section</title>
+      <style>
+          /* Centering Container */
+          .section-container {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 40px 10px;
+              width: 100%;
+              max-width: 1200px;
+              margin: auto;
+          }
+  
+          /* Dotted Lines */
+          .dotted-line {
+              flex-grow: 1;
+              border-top: 2px dotted black;
+              height: 0;
+              margin: 0 10px; /* Prevents touching edges */
+          }
+  
+          /* Heading Box */
+          .heading-text {
+              background: #7b2ff7;
+              color: white;
+              padding: 12px 30px;
+              border-radius: 8px;
+              font-weight: bold;
+              font-size: 20px;
+              white-space: nowrap;
+              text-align: center;
+              font-family: 'Poppins', sans-serif;
+          }
+  
+          /* Responsive Design */
+          @media (max-width: 768px) {
+              .heading-text {
+                  font-size: 18px;
+                  padding: 10px 25px;
+              }
+          }
+  
+          @media (max-width: 480px) {
+              .section-container {
+                  flex-wrap: nowrap;
+                  padding: 20px 15px;
+              }
+  
+              .dotted-line {
+                  min-width: 30px; /* Keeps it visible */
+                  margin: 0 5px; /* Prevents overflow */
+              }
+  
+              .heading-text {
+                  font-size: 16px;
+                  padding: 8px 20px;
+              }
+          }
+      </style>
+  </head>
+  <body>
+  
+      <section class="section-container">
+          <span class="dotted-line"></span>
+          <h4 class="heading-text">COURSE DETAILS</h4>
+          <span class="dotted-line"></span>
+      </section>
+  
+  </body>
+  </html>
+  
     
 
 
@@ -650,22 +664,21 @@
 
 
   
-<!-- Projects Developed by Learners Section -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Course Details Section</title> -->
     <style>
         /* Centering Container */
         .section-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 40px 0;
-            gap: 10px; /* Adds spacing */
+            padding: 30px 15px;
             width: 100%;
+            max-width: 1200px; /* Prevents content from stretching too much */
+            margin: auto;
         }
 
         /* Dotted Lines */
@@ -673,31 +686,44 @@
             flex-grow: 1;
             border-top: 2px dotted black;
             height: 0;
-            min-width: 100px; /* Ensures visibility on small screens */
+            margin: 0 10px; /* Prevents touching edges */
         }
 
         /* Heading Box */
         .heading-text {
             background: #7b2ff7;
             color: white;
-            padding: 10px 25px;
-            border-radius: 10px; /* Less curve */
+            padding: 12px 30px;
+            border-radius: 8px;
             font-weight: bold;
-            font-style: italic;
-            font-size: 18px;
+            font-size: 20px;
             white-space: nowrap;
             text-align: center;
+            font-family: 'Poppins', sans-serif;
         }
 
-        /* Mobile Responsive */
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .heading-text {
+                font-size: 18px;
+                padding: 10px 25px;
+            }
+        }
+
         @media (max-width: 480px) {
+            .section-container {
+                flex-wrap: nowrap;
+                padding: 20px 10px;
+            }
+
             .dotted-line {
-                min-width: 50px; /* Ensures it still shows */
+                min-width: 30px; /* Keeps it visible */
+                margin: 0 5px; /* Prevents overflow */
             }
 
             .heading-text {
-                font-size: 16px;
-                padding: 8px 15px;
+                font-size: 12px;
+                padding: 8px 20px;
             }
         }
     </style>
@@ -706,7 +732,7 @@
 
     <section class="section-container">
         <span class="dotted-line"></span>
-        <h4 class="heading-text">Project Developed by Learners</h4>
+        <h4 class="heading-text">Projects Developed by Learners</h4>
         <span class="dotted-line"></span>
     </section>
 
@@ -826,9 +852,9 @@
   .project-item img {
     width: 100%;
     height: auto;
-    max-width: 280px;
+    max-width: 335px;
     margin: 0 auto;
-    border-radius: 2px;
+    border-radius: 1px;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -855,6 +881,15 @@
     text-align: center;
     padding-top: 10px;
   }
+  /* Make titles and descriptions bold */
+.project-details h5 {
+  font-weight: 700; /* Makes the title bold */
+}
+
+.project-details p {
+  font-weight: 600; /* Makes the description slightly bold */
+}
+
 
   /* Hover effect on project item */
   .project-item:hover {
@@ -1526,41 +1561,59 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 40px 0;
-            gap: 10px; /* Adds spacing */
+            padding: 30px 10px;
             width: 100%;
+            max-width: 1200px; /* Prevents excessive stretching */
+            margin: auto;
         }
 
         /* Dotted Lines */
         .dotted-line {
             flex-grow: 1;
-            border-top: 2px dotted black;
+            border-top: 3px dotted black;
             height: 0;
-            min-width: 100px; /* Ensures visibility on small screens */
+            margin: 0 10px; /* Prevents overflow */
+            min-width: 40px; /* Ensures visibility */
         }
 
         /* Heading Box */
         .heading-text {
             background: #7b2ff7;
             color: white;
-            padding: 10px 25px;
-            border-radius: 10px; /* Less curve */
-            font-weight: bold;
-            font-style: italic;
-            font-size: 18px;
+            padding: 12px 30px;
+            border-radius: 5px; /* Slightly rounded for a modern look */
+            font-weight: 900;
+            font-size: 20px;
             white-space: nowrap;
             text-align: center;
+            text-transform: uppercase;
+            font-family: 'Arial Black', sans-serif;
+            letter-spacing: 1px;
         }
 
-        /* Mobile Responsive */
+        /* Tablet View */
+        @media (max-width: 768px) {
+            .heading-text {
+                font-size: 18px;
+                padding: 10px 25px;
+            }
+        }
+
+        /* Mobile View */
         @media (max-width: 480px) {
+            .section-container {
+                flex-wrap: nowrap;
+                padding: 20px 5px;
+            }
+
             .dotted-line {
-                min-width: 50px; /* Ensures it still shows */
+                min-width: 30px;
+                margin: 0 5px;
             }
 
             .heading-text {
-                font-size: 16px;
-                padding: 8px 15px;
+                font-size: 12px;
+                padding: 8px 20px;
             }
         }
     </style>
@@ -1569,12 +1622,13 @@
 
     <section class="section-container">
         <span class="dotted-line"></span>
-        <h4 class="heading-text">Project Videos by our Learners</h4>
+        <h4 class="heading-text">Project Videos by Our Learners</h4>
         <span class="dotted-line"></span>
     </section>
 
 </body>
 </html>
+
 
 
       <!-- <p class="section-description">Explore amazing educational projects developed by our talented learners.</p> -->
@@ -1650,42 +1704,60 @@
             align-items: center;
         }
         .video-card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
-        .video-card:hover {
-            transform: translateY(-5px);
-        }
-        .video-card img {
-            width: 100%;
-            border-radius: 8px;
-            max-height: 180px;
-            object-fit: cover;
-        }
-        .video-card h5 {
-            font-size: 1.1rem;
-            margin-top: 10px;
-        }
-        .video-card p {
-            font-size: 0.9rem;
-            color: #666;
-        }
-        
-        /* Responsive Image */
-        .image-container {
-            margin-top: 30px;
-            text-align: center;
-        }
-        .responsive-image {
-            width: 100%;
-            max-width: 1000px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Making Video Thumbnails Square */
+.video-card img {
+    width: 100%;
+    height: 300px; /* Square shape */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Text Styling */
+.video-card h5 {
+    font-size: 1.2rem;  /* Slightly bigger */
+    font-weight: 700;  /* Bold */
+    margin-top: 10px;
+    color: #333; /* Darker for better readability */
+}
+
+.video-card p {
+    font-size: 1rem; /* Increased size */
+    font-weight: 600; /* Semi-bold */
+    color: #555; /* Softer contrast */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .video-card h5 {
+        font-size: 1.1rem;
+    }
+    .video-card p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-card h5 {
+        font-size: 1rem;
+    }
+    .video-card p {
+        font-size: 0.9rem;
+    }
+}
+
     
         /* Responsive Design */
         @media (min-width: 1024px) {
