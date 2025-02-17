@@ -402,81 +402,82 @@
 <body>
 
     <!-- Course details -->
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Course Details Section</title>
-      <style>
-          /* Centering Container */
-          .section-container {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding: 40px 10px;
-              width: 100%;
-              max-width: 1200px;
-              margin: auto;
-          }
-  
-          /* Dotted Lines */
-          .dotted-line {
-              flex-grow: 1;
-              border-top: 2px dotted black;
-              height: 0;
-              margin: 0 10px; /* Prevents touching edges */
-          }
-  
-          /* Heading Box */
-          .heading-text {
-              background: #7b2ff7;
-              color: white;
-              padding: 12px 30px;
-              border-radius: 10px;
-              font-weight: bold;
-              font-size: 25px;
-              white-space: nowrap;
-              text-align: center;
-              font-family: 'Poppins', sans-serif;
-          }
-  
-          /* Responsive Design */
-          @media (max-width: 768px) {
-              .heading-text {
-                  font-size: 27px;
-                  padding: 10px 25px;
-              }
-          }
-  
-          @media (max-width: 480px) {
-              .section-container {
-                  flex-wrap: nowrap;
-                  padding: 20px 15px;
-              }
-  
-              .dotted-line {
-                  min-width: 30px; /* Keeps it visible */
-                  margin: 0 5px; /* Prevents overflow */
-              }
-  
-              .heading-text {
-                  font-size: 50px;
-                  padding: 8px 20px;
-              }
-          }
-      </style>
-  </head>
-  <body>
-  
-      <section class="section-container">
-          <span class="dotted-line"></span>
-          <h4 class="heading-text">COURSE DETAILS</h4>
-          <span class="dotted-line"></span>
-      </section>
-  
-  </body>
-  </html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Centering Container */
+            .section-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px 15px;
+                width: 100%;
+                max-width: 1200px; /* Prevents content from stretching too much */
+                margin: auto;
+            }
+    
+            /* Dotted Lines */
+            .dotted-line {
+                flex-grow: 1;
+                border-top: 2px dotted black;
+                height: 0;
+                margin: 0 10px; /* Prevents touching edges */
+            }
+    
+            /* Heading Box */
+            .heading-txt {
+                background: #7b2ff7;
+                color: white;
+                padding: 12px 30px;
+                font-weight: bold;
+                font-size: 20px;
+                white-space: nowrap;
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+            }
+    
+            /* Responsive Adjustments */
+            @media (max-width: 768px) {
+                .heading-txt {
+                    font-size: 18px;
+                    padding: 10px 25px;
+                }
+                
+                /* Hide dotted lines on small screens */
+                .dotted-line {
+                    display: none;
+                }
+            }
+    
+            @media (max-width: 480px) {
+                .section-container {
+                    flex-wrap: nowrap;
+                    padding: 20px 10px;
+                }
+    
+                /* Ensure text remains properly formatted */
+                .heading-txt {
+                    font-size: 18px;
+                    padding: 10px 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <section class="section-container">
+            <span class="dotted-line"></span>
+            <h4 class="heading-txt">COURSE DETAILS</h4>
+            <span class="dotted-line"></span>
+        </section>
+    
+    </body>
+    </html>
+    
+    
   
     
 
@@ -602,15 +603,29 @@
   width: 100%;
   border-radius: 10px;
 }
-.price span {
+.price {
+  display: block;
   background: #7b2ff7;
   color: white;
-  padding: 5px 10px;
-  top: -50%;
+  padding: 8px 15px;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 17px
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 10px; /* Space between price and image */
 }
+
+.thumb {
+  position: relative;
+  text-align: center;
+}
+
+.thumb img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
 .down-content ul {
   list-style: none;
   padding: 0;
@@ -671,11 +686,10 @@
         }
 
         /* Heading Box */
-        .heading-text {
+        .heading-txt {
             background: #7b2ff7;
             color: white;
             padding: 12px 30px;
-            border-radius: 8px;
             font-weight: bold;
             font-size: 20px;
             white-space: nowrap;
@@ -685,9 +699,14 @@
 
         /* Responsive Adjustments */
         @media (max-width: 768px) {
-            .heading-text {
+            .heading-txt {
                 font-size: 18px;
                 padding: 10px 25px;
+            }
+            
+            /* Hide dotted lines on small screens */
+            .dotted-line {
+                display: none;
             }
         }
 
@@ -697,14 +716,10 @@
                 padding: 20px 10px;
             }
 
-            .dotted-line {
-                min-width: 30px; /* Keeps it visible */
-                margin: 0 5px; /* Prevents overflow */
-            }
-
-            .heading-text {
-                font-size: 12px;
-                padding: 8px 20px;
+            /* Ensure text remains properly formatted */
+            .heading-txt {
+                font-size: 18px;
+                padding: 10px 20px;
             }
         }
     </style>
@@ -713,12 +728,13 @@
 
     <section class="section-container">
         <span class="dotted-line"></span>
-        <h4 class="heading-text">Projects Developed by Learners</h4>
+        <h4 class="heading-txt">Projects Developed by Learners</h4>
         <span class="dotted-line"></span>
     </section>
 
 </body>
 </html>
+
 
 
 
@@ -809,24 +825,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <script>
-  $(document).ready(function() {
-    $(".owl-carousel").owlCarousel({
-      items: 4,
-      loop: true,
-      margin: 10,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      nav: true,
-      dots: true,
-      // navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
-      responsive: {
-        0: { items: 1 },
-        600: { items: 2 },
-        1000: { items: 4 }
-      }
+    $(document).ready(function() {
+      $(".owl-carousel").owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        dots: true,  // Only dots for navigation
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          1000: { items: 4 }
+        }
+      });
     });
-  });
-</script>
+  </script>
+  
+  <style>
+    /* Removed owl-nav styling */
+  </style>
+  
 
 <style>
   /* Make images responsive and smaller */
@@ -878,7 +897,12 @@
     transform: translateY(-5px);
   }
 
-  /* Navigation arrows styling
+
+
+</style>
+</section>
+
+  <!-- /* Navigation arrows styling
    .owl-nav button {
     position: absolute;
     top: 50%;
@@ -917,9 +941,8 @@
   .owl-nav button.disabled {
     background: rgba(0, 0, 0, 0.3);
     cursor: not-allowed;
-  }
-</style>
-</section>
+  } -->
+
 
   
 
@@ -1076,8 +1099,84 @@
 
 
         <!-- Responsive Image Section with Enhanced UI -->
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Centering Container */
+        .section-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 15px;
+            width: 100%;
+            max-width: 1200px; /* Prevents content from stretching too much */
+            margin: auto;
+        }
+
+        /* Dotted Lines */
+        .dotted-line {
+            flex-grow: 1;
+            border-top: 2px dotted black;
+            height: 0;
+            margin: 0 10px; /* Prevents touching edges */
+        }
+
+        /* Heading Box */
+        .heading-txt {
+            background: #7b2ff7;
+            color: white;
+            padding: 12px 30px;
+            font-weight: bold;
+            font-size: 20px;
+            white-space: nowrap;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .heading-txt {
+                font-size: 18px;
+                padding: 10px 25px;
+            }
+            
+            /* Hide dotted lines on small screens */
+            .dotted-line {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-container {
+                flex-wrap: nowrap;
+                padding: 20px 10px;
+            }
+
+            /* Ensure text remains properly formatted */
+            .heading-txt {
+                font-size: 18px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section-container">
+        <span class="dotted-line"></span>
+        <h4 class="heading-txt">Projects for Practice</h4>
+        <span class="dotted-line"></span>
+    </section>
+
+</body>
+</html>
+
 <div class="image-container">
-  <img src="assets/images/project.jpg" alt="Project Info" class="responsive-image">
+  <img src="assets/images/project.png" alt="Project Info" class="responsive-image">
 </div>
 
 <style>
@@ -1089,7 +1188,7 @@
       padding: 20px;
       background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
       border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       overflow: hidden;
   }
@@ -1137,82 +1236,106 @@
 
 <!-- Live Projects & App Download Section -->
 <div class="live-projects-section">
-  <button class="live-projects-btn">
-      🚀 LIVE PROJECTS FOR PRACTICE WHICH ARE IN LIVE ON
-  </button>
-  <span class="emoji">👉</span>
-  <div class="app-buttons">
-      <a href="#" class="app-link">
-          <img src="assets/images/app-store.png" alt="Download on the App Store" class="download-img">
-      </a>
-      <a href="#" class="app-link">
-          <img src="assets/images/google-play.png" alt="Get it on Google Play" class="download-img">
-      </a>
+    <button class="live-projects-btn">
+        🚀 LIVE PROJECTS FOR PRACTICE WHICH ARE IN LIVE ON
+    </button>
+    <span class="emoji">👉</span> <!-- Default emoji -->
+    <div class="app-buttons">
+        <a href="#" class="app-link">
+            <img src="assets/images/app-store.png" alt="Download on the App Store" class="download-img">
+        </a>
+        <a href="#" class="app-link">
+            <img src="assets/images/google-play.png" alt="Get it on Google Play" class="download-img">
+        </a>
+    </div>
   </div>
-</div>
-
-<style>
-  .live-projects-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 40px;
-      padding: 20px;
-      background: #f8f9fa;
-      border-radius: 10px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .live-projects-btn {
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      text-transform: uppercase;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .live-projects-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
-  }
-
-  .emoji {
-      font-size: 24px;
-  }
-
-  .app-buttons {
-      display: flex;
-      gap: 10px;
-  }
-
-  .download-img {
-      height: 55px; /* Ensures both images are the same size */
-      width: auto;
-      transition: transform 0.3s ease;
-  }
-
-  .download-img:hover {
-      transform: scale(1.1);
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-      .live-projects-section {
-          flex-direction: column;
-          text-align: center;
-      }
-      .download-img {
-          height: 50px;
-      }
-  }
-</style>
+  
+  <style>
+    .live-projects-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 40px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .live-projects-btn {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .live-projects-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+    }
+  
+    .emoji {
+        font-size: 24px;
+        display: inline-block;
+    }
+  
+    .app-buttons {
+        display: flex;
+        gap: 10px;
+    }
+  
+    .download-img {
+        height: 55px;
+        width: auto;
+        transition: transform 0.3s ease;
+    }
+  
+    .download-img:hover {
+        transform: scale(1.1);
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .live-projects-section {
+            flex-direction: column;
+            text-align: center;
+        }
+  
+        .emoji {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+  
+        .download-img {
+            height: 50px;
+        }
+    }
+  </style>
+  
+  <script>
+    function updateEmoji() {
+        let emojiElement = document.querySelector(".emoji");
+        if (window.innerWidth <= 768) {
+            emojiElement.innerHTML = "👇"; // Change to down arrow in mobile view
+        } else {
+            emojiElement.innerHTML = "👉"; // Default right arrow for larger screens
+        }
+    }
+  
+    // Run on page load
+    updateEmoji();
+  
+    // Run when window resizes
+    window.addEventListener("resize", updateEmoji);
+  </script>
+  
  
 <!-- PROJECT SHOWCASE -->
 <!DOCTYPE html>
