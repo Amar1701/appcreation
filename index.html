@@ -51,7 +51,6 @@
         .social-media {
             display: flex;
             gap: 15px;
-            flex-wrap: wrap;
         }
         .social-media a {
             font-size: 20px;
@@ -115,44 +114,24 @@
         }
 
         /* RESPONSIVENESS */
-        @media (max-width: 1024px) {
-            .top-bar {
-                font-size: 14px;
-                padding: 8px 15px;
-            }
-            .contact-info {
-                gap: 10px;
-            }
-            .social-media {
-                gap: 10px;
-            }
-            .navbar {
-                padding: 12px 30px;
-            }
-            .logo img {
-                width: 180px;
-            }
-            .nav-links {
-                gap: 15px;
-            }
-        }
-
         @media (max-width: 768px) {
             .top-bar {
-                flex-direction: column;
+                display: flex;
+                justify-content: space-between;
                 align-items: center;
-                text-align: center;
-                gap: 8px;
-                padding: 10px 0;
+                padding: 10px 15px;
             }
             .contact-info {
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
-                gap: 5px;
+                gap: 10px;
+                justify-content: flex-start;
             }
             .social-media {
-                justify-content: center;
-                gap: 8px;
+                justify-content: flex-end;
+                gap: 10px;
+                flex: 1;
+                display: flex;
             }
             .navbar {
                 flex-direction: row;
@@ -361,7 +340,7 @@
         .course-heading::after {
             content: "";
             flex-grow: 1;
-            height: 2px;
+            height: 3px;
             background: black;
             border-top: 2px dotted black;
         }
@@ -454,9 +433,9 @@
               background: #7b2ff7;
               color: white;
               padding: 12px 30px;
-              border-radius: 8px;
+              border-radius: 10px;
               font-weight: bold;
-              font-size: 20px;
+              font-size: 25px;
               white-space: nowrap;
               text-align: center;
               font-family: 'Poppins', sans-serif;
@@ -465,7 +444,7 @@
           /* Responsive Design */
           @media (max-width: 768px) {
               .heading-text {
-                  font-size: 18px;
+                  font-size: 27px;
                   padding: 10px 25px;
               }
           }
@@ -482,7 +461,7 @@
               }
   
               .heading-text {
-                  font-size: 16px;
+                  font-size: 50px;
                   padding: 8px 20px;
               }
           }
@@ -569,7 +548,7 @@
                                   <li>✔️Internship + Job Assistance</li>
                               </ul>
                               <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
-                              <<a class="syllabus-btn" href="assets/pdf/ios_tutorial.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a>
+                              <a class="syllabus-btn" href="assets/pdf/ios_tutorial.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a>
                               <a class="know-more-btn" href="ios.html">Click Here to Know More</a> <!-- New button -->
                           </div>
                       </div>
@@ -624,11 +603,12 @@
   border-radius: 10px;
 }
 .price span {
-  background: purple;
+  background: #7b2ff7;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
   font-weight: bold;
+  font-size: 17px
 }
 .down-content ul {
   list-style: none;
@@ -675,54 +655,58 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 30px 15px;
             width: 100%;
-            max-width: 1200px; /* Prevents content from stretching too much */
+            max-width: 1200px;
             margin: auto;
+            padding: 20px 15px;
         }
 
         /* Dotted Lines */
         .dotted-line {
             flex-grow: 1;
-            border-top: 2px dotted black;
-            height: 0;
-            margin: 0 10px; /* Prevents touching edges */
+            height: 2px;
+            background: repeating-linear-gradient(to right, black, black 5px, transparent 5px, transparent 10px);
+            margin: 0 15px;
         }
 
         /* Heading Box */
         .heading-text {
             background: #7b2ff7;
             color: white;
-            padding: 12px 30px;
+            padding: 12px 40px;
             border-radius: 8px;
             font-weight: bold;
-            font-size: 20px;
-            white-space: nowrap;
+            font-size: 18px;
             text-align: center;
             font-family: 'Poppins', sans-serif;
+            white-space: nowrap;
         }
 
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             .heading-text {
-                font-size: 18px;
-                padding: 10px 25px;
+                font-size: 16px;
+                padding: 10px 30px;
+            }
+
+            .dotted-line {
+                margin: 0 10px;
             }
         }
 
         @media (max-width: 480px) {
             .section-container {
                 flex-wrap: nowrap;
-                padding: 20px 10px;
+                padding: 15px 10px;
             }
 
             .dotted-line {
-                min-width: 30px; /* Keeps it visible */
-                margin: 0 5px; /* Prevents overflow */
+                min-width: 40px;
+                margin: 0 5px;
             }
 
             .heading-text {
-                font-size: 12px;
+                font-size: 20px;
                 padding: 8px 20px;
             }
         }
@@ -731,13 +715,14 @@
 <body>
 
     <section class="section-container">
-        <span class="dotted-line"></span>
-        <h4 class="heading-text">Projects Developed by Learners</h4>
-        <span class="dotted-line"></span>
+        <div class="dotted-line"></div>
+        <h4 class="heading-text">PROJECT VIDEOS BY OUR LEARNERS</h4>
+        <div class="dotted-line"></div>
     </section>
 
 </body>
 </html>
+
 
 
 
