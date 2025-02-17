@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Website</title>
+    <title>App Creation</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,14 +69,18 @@
             padding: 15px 40px;
         }
         .logo img {
-            width: 235px;
+            width: 225px;
             height: auto;
         }
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 15px;
+            margin-right: 25px;
         }
+        .nav-links li:last-child {
+    margin-right: 3px; /* Adjust this value as needed */
+}
         .nav-links li {
             display: inline;
         }
@@ -84,12 +88,12 @@
             text-decoration: none;
             color: white;
             font-weight: 600;
-            padding: 8px 12px;
+            padding: 6px 8px;
             transition: 0.3s;
         }
         .nav-links a:hover {
             background-color: #e74c3c;
-            border-radius: 5px;
+            border-radius: 2px;
         }
         .menu-toggle {
             display: none;
@@ -98,17 +102,21 @@
             cursor: pointer;
         }
 
-        /* HERO IMAGE */
-        .hero {
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .desktop-image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+       /* HERO IMAGE */
+.hero {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent extra scrolling */
+}
+
+.desktop-image {
+    width: 100%;
+    max-height: 100vh; /* Ensures it fits within the viewport */
+    object-fit: cover; /* Maintains aspect ratio */
+    display: block;
+}
+
         .mobile-image {
             width: 100%;
             height: auto;
@@ -518,7 +526,10 @@
                                   <li>✔️24*7 Learner assistance and support</li>
                               </ul>
                               <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
-                              <a class="syllabus-btn" href="assets/pdf/android_tutorial.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a>
+                              <!-- <a class="syllabus-btn" href="assets/pdf/android_tutorial.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a> -->
+                              <a href="assets/pdf/android_tutorial.pdf" target="_blank">
+                                <img src="assets/images/syllabus-button.png" alt="Download Syllabus" class="syllabus-img">
+                            </a>
 
                               <a class="know-more-btn" href="meeting-details.html">Click Here to Know More</a> <!-- New button -->
                           </div>
@@ -549,7 +560,10 @@
                                   <li>✔️Internship + Job Assistance</li>
                               </ul>
                               <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
-                              <a class="syllabus-btn" href="assets/pdf/ios_tutorial.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a>
+                              <!-- <a class="syllabus-btn" href="assets/pdf/ios_tutorial.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a> -->
+                              <a href="assets/pdf/ios_tutorial.pdf" target="_blank">
+                                <img src="assets/images/syllabus-button.png" alt="Download Syllabus" class="syllabus-img">
+                            </a>
                               <a class="know-more-btn" href="ios.html">Click Here to Know More</a> <!-- New button -->
                           </div>
                       </div>
@@ -579,7 +593,9 @@
                                   <li>✔️Internship + Job Assistance</li>
                               </ul>
                               <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
-                              <a class="syllabus-btn" href="assets/pdf/projects.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a>
+                              <a href="assets/pdf/projects.pdf" target="_blank">
+                                <img src="assets/images/syllabus-button.png" alt="Download Syllabus" class="syllabus-img">
+                            </a>
                               <a class="know-more-btn" href="#">Click Here to Know More</a> <!-- New button -->
                           </div>
                       </div>
@@ -603,12 +619,39 @@
   width: 100%;
   border-radius: 10px;
 }
+
+/* Styling for the syllabus image button */
+.syllabus-img {
+    width: 100%; /* Makes it responsive */
+    max-width: 250px; /* Ensures it does not get too large */
+    display: block;
+    margin: 10px auto; /* Centers it */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.syllabus-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .syllabus-img {
+        max-width: 270px; /* Smaller button on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .syllabus-img {
+        max-width: 320px; /* Even smaller button for mobile screens */
+    }
+}
 .price {
   display: block;
   background: #7b2ff7;
   color: white;
   padding: 8px 15px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   font-weight: bold;
   font-size: 18px;
   position: relative;
@@ -654,7 +697,7 @@
   background: hotpink;
 }
 .know-more-btn {
-  background: blue; /* Color for the new button */
+  background: rgb(255, 145, 0); /* Color for the new button */
 }
 </style>
 
@@ -728,7 +771,7 @@
 
     <section class="section-container">
         <span class="dotted-line"></span>
-        <h4 class="heading-txt">Projects Developed by Learners</h4>
+        <h4 class="heading-txt">PROJECTS DEVELOPED BY LEARNERS</h4>
         <span class="dotted-line"></span>
     </section>
 
@@ -1098,9 +1141,9 @@
 
 
 
-        <!-- Responsive Image Section with Enhanced UI -->
+<!-- Responsive Image Section with Enhanced UI -->
 
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1168,13 +1211,14 @@
 
     <section class="section-container">
         <span class="dotted-line"></span>
-        <h4 class="heading-txt">Projects for Practice</h4>
+        <h4 class="heading-txt">PROJECTS FOR PRACTICE</h4>
         <span class="dotted-line"></span>
     </section>
 
 </body>
 </html>
 
+<!-- Image Container -->
 <div class="image-container">
   <img src="assets/images/project.png" alt="Project Info" class="responsive-image">
 </div>
@@ -1186,16 +1230,14 @@
       align-items: center;
       margin-top: 20px;
       padding: 20px;
-      background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+      background: transparent; /* Removed background gradient */
       border-radius: 15px;
-      /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0); */
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s ease;
       overflow: hidden;
   }
 
   .image-container:hover {
       transform: translateY(-5px);
-      /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); */
   }
 
   .responsive-image {
@@ -1228,9 +1270,6 @@
       }
   }
 </style>
-
-    </div>
-</section>
 
 
 
@@ -1266,7 +1305,7 @@
     }
   
     .live-projects-btn {
-        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        background: #7b2ff7;
         color: white;
         font-size: 16px;
         font-weight: bold;
@@ -1353,7 +1392,7 @@
             margin: 0;
             padding: 0;
             background-color: #f0f2f5;
-            color: #333;
+            color: #fffbfb;
             transition: background-color 0.3s, color 0.3s;
         }
 
@@ -1462,7 +1501,7 @@
         }
 
         .start-button {
-            background: #28a745;
+            /* background: #ffffff; */
             color: white;
             padding: 12px;
             border: none;
@@ -1474,7 +1513,7 @@
         }
 
         .start-button:hover {
-            background: #218838;
+            background: #ffffff;
             transform: scale(1.05);
         }
 
@@ -1513,11 +1552,11 @@
         }
 
         body.dark-mode .start-button {
-            background: #66bb6a;
+            background: #ffffff;
         }
 
         body.dark-mode .start-button:hover {
-            background: #388e3c;
+            background: #ffffff;
         }
 
         /* Alternate Theme */
@@ -1548,23 +1587,56 @@
         }
 
         body.alternate-mode .start-button {
-            background: #28a745;
+            background: #ffffff;
         }
 
         body.alternate-mode .start-button:hover {
-            background: #218838;
+            background: #eaeaea;
         }
+        /* Make the background fully white */
+body {
+    background-color: #ffffff !important; /* White background */
+    color: #000000; /* Set text color to black for readability */
+}
+
+/* Remove or update the dark overlay */
+.project-container::before {
+    background: rgba(255, 255, 255, 0.9) !important; /* White overlay or remove it */
+}
+
+/* Ensure the cards have proper contrast */
+.project-card {
+    background: #f8f9fa !important; /* Light grey to differentiate */
+    color: #000000; /* Black text */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Update the text styles for better contrast */
+.project-header {
+    background: linear-gradient(45deg, #ffcc00, #ff6600); /* Optional: New gradient */
+}
+
+.project-title,
+.project-name,
+.project-description p {
+    color: #000000 !important; /* Ensure black text for readability */
+}
+
+/* Optional: Remove dark mode overrides */
+body.dark-mode {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+body.dark-mode .project-card {
+    background: #f8f9fa !important;
+    color: #000000 !important;
+}
+
     </style>
 </head>
 <body>
-    <!-- Theme Toggle Buttons -->
-    <!-- <div style="position: fixed; top: 20px; right: 20px; display: flex; gap: 10px;">
-        <button onclick="toggleTheme('light')">Light Theme</button>
-        <button onclick="toggleTheme('dark')">Dark Theme</button>
-        <button onclick="toggleTheme('alternate')">Alternate Theme</button>
-    </div> -->
 
-    <!-- Project Showcase Section with Background Image -->
     <div class="project-container">
         <div class="project-card">
             <div class="project-header">
@@ -1582,7 +1654,11 @@
                     <img src="assets/images/app.png" alt="Real Estate App">
                 </div>
             </div>
-            <button class="start-button">START PROJECT 🚀</button>
+            <!-- Replace the button with an image -->
+<a href="#" class="start-button">
+    <img src="assets/images/start-button.png" alt="Start Project" class="start-button-img">
+</a>
+
         </div>
 
         <div class="project-card">
@@ -1601,7 +1677,11 @@
                     <img src="assets/images/app.png" alt="E-Commerce App">
                 </div>
             </div>
-            <button class="start-button">START PROJECT 🚀</button>
+            <!-- Replace the button with an image -->
+<a href="#" class="start-button">
+    <img src="assets/images/start-button.png" alt="Start Project" class="start-button-img">
+</a>
+
         </div>
 
         <div class="project-card">
@@ -1620,7 +1700,11 @@
                     <img src="assets/images/app.png" alt="Fitness Tracker">
                 </div>
             </div>
-            <button class="start-button">START PROJECT 🚀</button>
+            <!-- Replace the button with an image -->
+<a href="#" class="start-button">
+    <img src="assets/images/start-button.png" alt="Start Project" class="start-button-img">
+</a>
+
         </div>
 
         <div class="project-card">
@@ -1639,7 +1723,11 @@
                     <img src="assets/images/app.png" alt="Task Manager">
                 </div>
             </div>
-            <button class="start-button">START PROJECT 🚀</button>
+            <!-- Replace the button with an image -->
+<a href="#" class="start-button">
+    <img src="assets/images/start-button.png" alt="Start Project" class="start-button-img">
+</a>
+
         </div>
     </div>
 
@@ -1649,6 +1737,35 @@
             document.body.classList.add(theme + '-mode');
         }
     </script>
+    <style>
+
+        /* Style for the image button */
+.start-button {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.start-button-img {
+    width: 100%;
+    max-width: 210px; /* Adjust as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.start-button-img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .start-button-img {
+        max-width: 140px; /* Smaller on mobile */
+    }
+}
+
+    </style>
 
 </body>
 </html>
@@ -1660,7 +1777,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Details Section</title>
+    <!-- <title>Course Details Section</title> -->
     <style>
         /* Centering Container */
         .section-container {
