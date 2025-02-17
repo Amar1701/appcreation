@@ -615,6 +615,7 @@
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
     margin-right:1px ;
+    margin-top: 20px;
 }
 
 .know-more-img:hover {
@@ -1281,7 +1282,7 @@
 
   .responsive-image {
       width: 100%;
-      max-width: 1500px;
+      max-width: 1580px;
       height: auto;
       border-radius: 10px;
       object-fit: cover;
@@ -1314,20 +1315,81 @@
 
 <!-- Live Projects & App Download Section -->
 <!-- Live Projects & App Download Section -->
-<div class="live-projects-section">
-    <button class="live-projects-btn">
-         LIVE PROJECTS FOR PRACTICE 
-    </button>
-    <!-- <span class="emoji">👉</span> 
-    <div class="app-buttons">
-        <a href="#" class="app-link">
-            <img src="assets/images/app-store.png" alt="Download on the App Store" class="download-img">
-        </a>
-        <a href="#" class="app-link">
-            <img src="assets/images/google-play.png" alt="Get it on Google Play" class="download-img">
-        </a> -->
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Centering Container */
+        .section-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 15px;
+            width: 100%;
+            max-width: 1200px; /* Prevents content from stretching too much */
+            margin: auto;
+        }
+
+        /* Dotted Lines */
+        .dotted-line {
+            flex-grow: 1;
+            border-top: 2px dotted black;
+            height: 0;
+            margin: 0 10px; /* Prevents touching edges */
+        }
+
+        /* Heading Box */
+        .heading-txt {
+            background: #7b2ff7;
+            color: white;
+            padding: 12px 30px;
+            font-weight: bold;
+            font-size: 20px;
+            white-space: nowrap;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .heading-txt {
+                font-size: 18px;
+                padding: 10px 25px;
+            }
+            
+            /* Hide dotted lines on small screens */
+            .dotted-line {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-container {
+                flex-wrap: nowrap;
+                padding: 20px 10px;
+            }
+
+            /* Ensure text remains properly formatted */
+            .heading-txt {
+                font-size: 18px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section-container">
+        <span class="dotted-line"></span>
+        <h4 class="heading-txt">LIVE PROJECTS FOR PRACTICE</h4>
+        <span class="dotted-line"></span>
+    </section>
+
+</body>
+</html>
+
   
   <style>
     .live-projects-section {
@@ -1523,66 +1585,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Course Details Section</title> -->
     <style>
         /* Centering Container */
         .section-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 30px 10px;
+            padding: 30px 15px;
             width: 100%;
-            max-width: 1200px; /* Prevents excessive stretching */
+            max-width: 1200px; /* Prevents content from stretching too much */
             margin: auto;
         }
 
         /* Dotted Lines */
         .dotted-line {
             flex-grow: 1;
-            border-top: 3px dotted black;
+            border-top: 2px dotted black;
             height: 0;
-            margin: 0 10px; /* Prevents overflow */
-            min-width: 40px; /* Ensures visibility */
+            margin: 0 10px; /* Prevents touching edges */
         }
 
         /* Heading Box */
-        .heading-text {
+        .heading-txt {
             background: #7b2ff7;
             color: white;
             padding: 12px 30px;
-            border-radius: 5px; /* Slightly rounded for a modern look */
-            font-weight: 900;
+            font-weight: bold;
             font-size: 20px;
             white-space: nowrap;
             text-align: center;
-            text-transform: uppercase;
-            font-family: 'Arial Black', sans-serif;
-            letter-spacing: 1px;
+            font-family: 'Poppins', sans-serif;
         }
 
-        /* Tablet View */
+        /* Responsive Adjustments */
         @media (max-width: 768px) {
-            .heading-text {
+            .heading-txt {
                 font-size: 18px;
                 padding: 10px 25px;
             }
+            
+            /* Hide dotted lines on small screens */
+            .dotted-line {
+                display: none;
+            }
         }
 
-        /* Mobile View */
         @media (max-width: 480px) {
             .section-container {
                 flex-wrap: nowrap;
-                padding: 20px 5px;
+                padding: 20px 10px;
             }
 
-            .dotted-line {
-                min-width: 30px;
-                margin: 0 5px;
-            }
-
-            .heading-text {
-                font-size: 12px;
-                padding: 8px 20px;
+            /* Ensure text remains properly formatted */
+            .heading-txt {
+                font-size: 18px;
+                padding: 10px 20px;
             }
         }
     </style>
@@ -1591,12 +1648,13 @@
 
     <section class="section-container">
         <span class="dotted-line"></span>
-        <h4 class="heading-text">Project Videos by Our Learners</h4>
+        <h4 class="heading-txt">PROJECT VIDEOS BY LEARNERS</h4>
         <span class="dotted-line"></span>
     </section>
 
 </body>
 </html>
+
 
 
 
