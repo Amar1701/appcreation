@@ -29,7 +29,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
+            padding: 8px 16px;
             font-size: 14px;
             flex-wrap: wrap;
         }
@@ -52,7 +52,7 @@
         .social-media {
             display: flex;
             gap: 20px; /* Increased space between icons */
-            font-size: 30px; /* Increased icon size */
+            font-size: 25px; /* Increased icon size */
             margin-top: 10px; /* Added gap between email and social media */
         }
         .social-media a {
@@ -66,10 +66,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 40px;
+            padding: 15px 25px;
         }
         .logo img {
-            width: 225px;
+            width: 240px;
             height: auto;
         }
         .nav-links {
@@ -220,7 +220,7 @@
 
     <!-- HERO SECTION (DESKTOP) -->
     <section class="hero">
-        <img src="assets/images/LastImage.png" alt="Website Banner" class="desktop-image">
+        <img src="assets/images/AppCreation.png" alt="Website Banner" class="desktop-image">
         <img src="assets/images/LastImage_1.png" alt="Mobile Banner" class="mobile-image">
     </section>
 
@@ -531,7 +531,9 @@
                                 <img src="assets/images/syllabus-button.png" alt="Download Syllabus" class="syllabus-img">
                             </a>
 
-                              <a class="know-more-btn" href="meeting-details.html">Click Here to Know More</a> <!-- New button -->
+                            <a href="meeting-details.html">
+                                <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img">
+                            </a>
                           </div>
                       </div>
                   </div>
@@ -564,7 +566,9 @@
                               <a href="assets/pdf/ios_tutorial.pdf" target="_blank">
                                 <img src="assets/images/syllabus-button.png" alt="Download Syllabus" class="syllabus-img">
                             </a>
-                              <a class="know-more-btn" href="ios.html">Click Here to Know More</a> <!-- New button -->
+                            <a href="meeting-details.html">
+                                <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img">
+                            </a>
                           </div>
                       </div>
                   </div>
@@ -576,7 +580,7 @@
                               <div class="price">
                                   <span>LIVE PROJECTS TRAINING </span>
                               </div>
-                              <a href="meeting-details.html">
+                              <a href="#">
                                   <img src="assets/images/meeting-03.jpg" alt="Project Development">
                               </a>
                           </div>
@@ -596,7 +600,41 @@
                               <a href="assets/pdf/projects.pdf" target="_blank">
                                 <img src="assets/images/syllabus-button.png" alt="Download Syllabus" class="syllabus-img">
                             </a>
-                              <a class="know-more-btn" href="#">Click Here to Know More</a> <!-- New button -->
+                              <!-- Know More Image Button -->
+<a href="meeting-details.html">
+    <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img">
+</a>
+
+<style>
+    /* Styling for the Know More image button */
+.know-more-img {
+    width: 100%; /* Makes it responsive */
+    max-width: 240px; /* Adjust based on design */
+    display: block;
+    margin: 10px auto; /* Center align */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.know-more-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .know-more-img {
+        max-width: 285px; /* Slightly smaller for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .know-more-img {
+        max-width: 285px; /* Smaller button for mobile screens */
+    }
+}
+
+</style>
+
                           </div>
                       </div>
                   </div>
