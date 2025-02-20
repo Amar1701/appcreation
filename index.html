@@ -212,7 +212,7 @@
     <!-- MAIN NAVBAR -->
     <nav class="navbar">
         <div class="logo">
-            <img src="assets/images/logo3.png" alt="Website Logo">
+            <img src="assets/images/NewLogo1.png" alt="Website Logo">
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
@@ -668,7 +668,7 @@ function closePopup() {
                             </a>
                             <div class="terms-container">
                                 <button class="terms-btn" onclick="openTerms()">
-                                    <i class="fas fa-info-circle"></i> Terms & Conditions
+                                    <i class="fas fa-info-circle"></i> <span>Terms & Conditions</span>
                                 </button>
                             </div>
                             
@@ -810,20 +810,22 @@ function closePopup() {
                               <!-- <a class="enquire-btn" href="#">Enquire Now</a> -->
                               <!-- <a class="syllabus-btn" href="assets/pdf/ios_tutorial.pdf" target="_blank">DOWNLOAD COURSE SYLLABUS</a> -->
                               <div class="uploaded-images">
-                                <img src="assets/images/coursebottom.png" alt="Uploaded Image 1">
-                                <!-- <img src="assets/images/Screenshot2.png" alt="Uploaded Image 2"> -->
+                                <img src="assets/images/coursebottom.png" alt="Uploaded Image 1" class="course-img">
                             </div>
-                              <a href="assets/pdf/ios_tutorial.pdf" target="_blank">
+                            
+                            <a href="assets/pdf/ios_tutorial.pdf" target="_blank">
                                 <img src="assets/images/syllabus-button.png" alt="Download Syllabus" class="syllabus-img">
                             </a>
+                            
                             <a href="meeting-details.html">
                                 <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img">
                             </a>
+                            
 
                             <!-- Below Know More Button -->
                             <div class="terms-container">
                                 <button class="terms-btn" onclick="openTerms()">
-                                    <i class="fas fa-info-circle"></i> Terms & Conditions
+                                    <i class="fas fa-info-circle"></i> <span>Terms & Conditions</span>
                                 </button>
                             </div>
 
@@ -831,9 +833,11 @@ function closePopup() {
 .uploaded-images {
     display: flex;
     flex-direction: column; /* Stacks images vertically */
-    align-items: center;
+    align-items: flex-end; /* Aligns images to the right */
     gap: 20px;
     margin-top: 20px;
+    width: 100%; /* Ensures full width for alignment */
+    margin-right: 25px;
 }
 
 .uploaded-images img {
@@ -841,6 +845,7 @@ function closePopup() {
     max-width: 600px; /* Restricts max width */
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
 }
 
 /* Responsive Styling */
@@ -855,6 +860,7 @@ function closePopup() {
         max-width: 100%; /* Full width for mobile */
     }
 }
+
 </style>
 
                           </div>
@@ -1000,7 +1006,7 @@ function closePopup() {
                                 <!-- <img src="assets/images/Screenshot2.png" alt="Uploaded Image 2"> -->
                             </div>
                               <a href="assets/pdf/projects.pdf" target="_blank">
-                                <img src="assets/images/syllabus-button.png" alt="Download Syllabus" class="syllabus-img">
+                                <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img">
                             </a>
                               <!-- Know More Image Button -->
                             <a href="meeting-details.html">
@@ -1015,52 +1021,56 @@ function closePopup() {
                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
                             <style>
                                 .terms-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Ensures left alignment */
-    margin-top: 20px;
-    margin-left: 10px; /* Reduce margin for better left alignment */
-}
-
-.terms-btn {
-    background-color: #ffffff;
-    color: #0056b3;
-    font-size: 12px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: underline; /* Underline text */
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-/* Remove hover effect to keep design consistent */
-.terms-btn i {
-    font-size: 18px;
-    /* text-decoration: underline; Underline icon */
-}
-
-@media (max-width: 600px) {
-    .terms-container {
-        margin-left: 2px; /* Reduce margin for smaller screens */
-    }
-    .terms-btn {
-        font-size: 12px;
-        padding: 8px 16px;
-    }
-}
-
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start; /* Ensures left alignment */
+                                    margin-top: 20px;
+                                    margin-left: 2px; /* Reduce margin for better left alignment */
+                                }
+                        
+                                .terms-btn {
+                                    background-color: #ffffff;
+                                    color: #0056b3;
+                                    font-size: 14px;
+                                    padding: 10px 20px;
+                                    border: none;
+                                    border-radius: 5px;
+                                    cursor: pointer;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 8px;
+                                    font-weight: bold;
+                                    margin-left: 2px; 
+                                    transition: background 0.3s ease;
+                                    text-decoration: none; /* Ensures button itself has no underline */
+                                }
+                        
+                                .terms-btn span {
+                                    text-decoration: underline; /* Underlines only the text */
+                                }
+                        
+                                .terms-btn i {
+                                    font-size: 18px;
+                                    text-decoration: none; /* Ensures icon is NOT underlined */
+                                }
+                        
+                                /* Responsive Styling */
+                                @media (max-width: 600px) {
+                                    .terms-container {
+                                        margin-left: 2px; /* Reduce margin for smaller screens */
+                                    }
+                                    .terms-btn {
+                                        font-size: 12px;
+                                        padding: 8px 16px;
+                                    }
+                                }
                             </style>
                         </head>
                         <body>
                         
                             <div class="terms-container">
                                 <button class="terms-btn" onclick="openTerms()">
-                                    <i class="fas fa-info-circle"></i> Terms & Conditions
+                                    <i class="fas fa-info-circle"></i> <span>Terms & Conditions</span>
                                 </button>
                             </div>
                         
@@ -1072,6 +1082,7 @@ function closePopup() {
                         
                         </body>
                         </html>
+                        
                         
 
                         
@@ -1293,84 +1304,172 @@ function closePopup() {
 
 
     <!-- Mobile Scrolling Images Section -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Fix</title>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <style>
+        /* Ensure proper spacing at the top and bottom */
+        .project-carousel {
+            padding-top: 70px;  /* Increased padding to make the top visible */
+            padding-bottom: 70px; /* Extra space at the bottom */
+        }
+
+        /* Styling for project items */
+        .project-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;  /* Increased padding for better spacing */
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Ensure images are not clipped */
+        .project-item img {
+            width: 100%;
+            height: auto;
+            max-width: 335px;
+            margin: 0 auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            margin-top: 20px;  /* Added spacing to prevent clipping */
+            padding: 10px; /* Ensure images fit well */
+        }
+
+        /* Increase space below the images */
+        .project-details {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px; /* Added extra padding */
+        }
+
+        /* Make titles and descriptions bold */
+        .project-details h5 {
+            font-weight: 700; /* Makes the title bold */
+        }
+
+        .project-details p {
+            font-weight: 600; /* Slightly bold description */
+        }
+
+        /* Hover effect on project item */
+        .project-item:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            .project-carousel {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-carousel {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section>
     <div class="row">
-      <div class="col-12">
-        <div class="project-carousel">
-          <div class="owl-carousel owl-theme">
-            <!-- Project Items -->
-            <div class="item">
-              <div class="project-item">
-                <a href="#" target="_blank">
-                  <img src="assets/images/app.png" alt="Learner's App 1" class="img-fluid">
-                </a>
-                <div class="project-details">
-                  <h5>App Title 1</h5>
-                  <p>Short description of the app.</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="project-item">
-                <a href="#" target="_blank">
-                  <img src="assets/images/app.png" alt="Learner's App 2" class="img-fluid">
-                </a>
-                <div class="project-details">
-                  <h5>App Title 2</h5>
-                  <p>Short description of the app.</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="project-item">
-                <a href="#" target="_blank">
-                  <img src="assets/images/app.png" alt="Learner's App 3" class="img-fluid">
-                </a>
-                <div class="project-details">
-                  <h5>App Title 3</h5>
-                  <p>Short description of the app.</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="project-item">
-                <a href="#" target="_blank">
-                  <img src="assets/images/app.png" alt="Learner's App 4" class="img-fluid">
-                </a>
-                <div class="project-details">
-                  <h5>App Title 4</h5>
-                  <p>Short description of the app.</p>
-                </div>
-              </div>
-            </div>
+        <div class="col-12">
+            <div class="project-carousel">
+                <div class="owl-carousel owl-theme">
+                    <!-- Project Items -->
+                    <div class="item">
+                        <div class="project-item">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/app.png" alt="Learner's App 1" class="img-fluid">
+                            </a>
+                            <div class="project-details">
+                                <h5>App Title 1</h5>
+                                <p>Short description of the app.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="item">
-              <div class="project-item">
-                <a href="#" target="_blank">
-                  <img src="assets/images/app.png" alt="Learner's App 4" class="img-fluid">
-                </a>
-                <div class="project-details">
-                  <h5>App Title 5</h5>
-                  <p>Short description of the app.</p>
-                </div>
-              </div>
-            </div>
+                    <div class="item">
+                        <div class="project-item">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/app.png" alt="Learner's App 2" class="img-fluid">
+                            </a>
+                            <div class="project-details">
+                                <h5>App Title 2</h5>
+                                <p>Short description of the app.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="item">
-              <div class="project-item">
-                <a href="#" target="_blank">
-                  <img src="assets/images/app.png" alt="Learner's App 4" class="img-fluid">
-                </a>
-                <div class="project-details">
-                  <h5>App Title 6</h5>
-                  <p>Short description of the app.</p>
+                    <div class="item">
+                        <div class="project-item">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/app.png" alt="Learner's App 3" class="img-fluid">
+                            </a>
+                            <div class="project-details">
+                                <h5>App Title 3</h5>
+                                <p>Short description of the app.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="project-item">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/app.png" alt="Learner's App 4" class="img-fluid">
+                            </a>
+                            <div class="project-details">
+                                <h5>App Title 4</h5>
+                                <p>Short description of the app.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="project-item">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/app.png" alt="Learner's App 5" class="img-fluid">
+                            </a>
+                            <div class="project-details">
+                                <h5>App Title 5</h5>
+                                <p>Short description of the app.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="project-item">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/app.png" alt="Learner's App 6" class="img-fluid">
+                            </a>
+                            <div class="project-details">
+                                <h5>App Title 6</h5>
+                                <p>Short description of the app.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <!-- jQuery (necessary for Owl Carousel) -->
@@ -1380,82 +1479,24 @@ function closePopup() {
 
 <script>
     $(document).ready(function() {
-      $(".owl-carousel").owlCarousel({
-        items: 4,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        dots: true,  // Only dots for navigation
-        responsive: {
-          0: { items: 1 },
-          600: { items: 2 },
-          1000: { items: 4 }
-        }
-      });
+        $(".owl-carousel").owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            dots: true,  // Only dots for navigation
+            responsive: {
+                0: { items: 1 },
+                600: { items: 2 },
+                1000: { items: 4 }
+            }
+        });
     });
-  </script>
-  
-  <style>
-    /* Removed owl-nav styling */
-  </style>
-  
+</script>
 
-<style>
-  /* Make images responsive and smaller */
-  .project-item img {
-    width: 100%;
-    height: auto;
-    max-width: 335px;
-    margin: 0 auto;
-    border-radius: 1px;
-    transition: transform 0.3s ease-in-out;
-    margin-top: 10px;
-  }
-
-  /* Add hover effect for images */
-  .project-item img:hover {
-    transform: scale(1.05);
-  }
-
-  /* Styling for project items */
-  .project-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-  }
-
-  /* Add spacing and hover effect for project details */
-  .project-details {
-    text-align: center;
-    padding-top: 20px;
-  }
-  /* Make titles and descriptions bold */
-.project-details h5 {
-  font-weight: 700; /* Makes the title bold */
-}
-
-.project-details p {
-  font-weight: 600; /* Makes the description slightly bold */
-}
-
-
-  /* Hover effect on project item */
-  .project-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-    transform: translateY(-5px);
-  }
-
-
-
-</style>
-</section>
+</body>
+</html>
 
   <!-- /* Navigation arrows styling
    .owl-nav button {
