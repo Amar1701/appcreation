@@ -530,12 +530,15 @@
                             <a href="ios.html">
                                 <img src="assets/images/AndroidCourse.png" alt="iOS Development">
                             </a>
+                            
                         </div>
                         <div class="down-content">
                             <!-- Image Button to Open Popup -->
                             <a href="javascript:void(0);" onclick="openPopup()">
                                 <img src="assets/images/demo.png" alt="Click for Demo" class="demo-btn">
                             </a>
+                            <img src="assets/images/class.png" alt="Additional Image" class="img-fluid mt-2">
+
                 
                             <!-- Popup Modal -->
                             <div id="demoPopup" class="popup-overlay">
@@ -562,18 +565,18 @@
                             </div>
                 
                             <!-- Button to Trigger Portrait Popup -->
-                            <button class="build-apps-btn" onclick="openPortraitPopup()">Click here to build apps</button>
+                            <!-- <button class="build-apps-btn" onclick="openPortraitPopup()">Click here to build apps</button> -->
                 
                             <!-- Portrait Popup -->
-                            <div id="portraitPopup" class="popup-overlay">
+                            <!-- <div id="portraitPopup" class="popup-overlay">
                                 <div class="popup-content">
                                     <span class="close-btn" onclick="closePortraitPopup()">✖</span>
                                     <img src="assets/images/coursepopupandroid.jpg" alt="Portrait Image" class="popup-image">
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div style="color: #0056A0;">
-                                <img src="assets/images/info.jpg" alt="Info Image" height="16px" width="16px">
+                                <img src="assets/images/info.jpg" alt="Info Image" height="16px" width="16px" margin-left="10px">
                                 <b><u>Terms & conditions</u></b>
                             </div>
                 
@@ -731,10 +734,10 @@
     <div class="meeting-item">
         <div class="thumb">
             <div class="price">
-                <span>IOS APPS TRAINING</span>
+                <span>LIVE PROJECTS TRAINING</span>
             </div>
             <a href="ios.html">
-                <img src="assets/images/iOSCourse.png" alt="iOS Development">
+                <img src="assets/images/LiveProjects.png" alt="iOS Development">
             </a>
         </div>
         <div class="down-content">
@@ -742,7 +745,8 @@
             <a href="javascript:void(0);" onclick="openPopup()">
                 <img src="assets/images/demo.png" alt="Click for Demo" class="demo-btn">
             </a>
-
+            <img src="assets/images/class.png" alt="Additional Image" class="img-fluid mt-2">
+            
             <!-- Popup Modal -->
             <div id="demoPopup" class="popup-overlay">
                 <div class="popup-content">
@@ -756,25 +760,18 @@
             </div>
             
             <div class="buttons-container">
-                <a href="assets/pdf/projects.pdf" target="_blank">
-                    <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img large-btn">
-                </a>
-                <!-- Know More Image Button -->
-                <a href="meeting-details.html">
-                    <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn">
-                </a>
-            </div>
-
-            <!-- Button to Trigger Portrait Popup -->
-            <button class="build-apps-btn" onclick="openPortraitPopup()">Click here to build apps</button>
-
-            <!-- Portrait Popup -->
-            <div id="portraitPopup" class="popup-overlay">
-                <div class="popup-content">
-                    <span class="close-btn" onclick="closePortraitPopup()">✖</span>
-                    <img src="assets/images/coursepopup1.jpg" alt="Portrait Image" class="popup-image">
+                <div class="text-end">
+                    <a href="assets/pdf/projects.pdf" target="_blank">
+                        <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img large-btn">
+                    </a>
+                </div>
+                <div class="text-end mt-2">
+                    <a href="meeting-details.html">
+                        <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn">
+                    </a>
                 </div>
             </div>
+
             <div style="color: #0056A0;">
                 <img src="assets/images/info.jpg" alt="Info Image" height="16px" width="16px">
                 <b><u>Terms & conditions</u></b>
@@ -786,8 +783,8 @@
 <style>
     .buttons-container {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-end;
         gap: 10px;
         margin-top: 10px;
     }
@@ -799,60 +796,9 @@
         width: 100px;
         height: auto;
     }
-    .build-apps-btn {
-        background-color: #007bff;
-        color: white;
-        font-size: 16px;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        display: block;
-        margin: 20px auto;
-        transition: background 0.3s ease;
-    }
-    .build-apps-btn:hover {
-        background-color: #0056b3;
-    }
-    .popup-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        justify-content: center;
-        align-items: center;
-    }
-    .popup-content {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        text-align: center;
-        position: relative;
-    }
-    .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .popup-image {
-        max-width: 100%;
-        height: auto;
-    }
 </style>
 
 <script>
-    function openPortraitPopup() {
-        document.getElementById("portraitPopup").style.display = "flex";
-    }
-    function closePortraitPopup() {
-        document.getElementById("portraitPopup").style.display = "none";
-    }
     function openPopup() {
         document.getElementById("demoPopup").style.display = "flex";
     }
@@ -879,6 +825,8 @@
             <a href="javascript:void(0);" onclick="openPopup()">
                 <img src="assets/images/demo.png" alt="Click for Demo" class="demo-btn">
             </a>
+            <img src="assets/images/class.png" alt="Additional Image" class="img-fluid mt-2">
+            
 
             <!-- Popup Modal -->
             <div id="demoPopup" class="popup-overlay">
@@ -903,15 +851,15 @@
             </div>
 
             <!-- Button to Trigger Portrait Popup -->
-            <button class="build-apps-btn" onclick="openPortraitPopup()">Click here to build apps</button>
+            <!-- <button class="build-apps-btn" onclick="openPortraitPopup()">Click here to build apps</button> -->
 
             <!-- Portrait Popup -->
-            <div id="portraitPopup" class="popup-overlay">
+            <!-- <div id="portraitPopup" class="popup-overlay">
                 <div class="popup-content">
                     <span class="close-btn" onclick="closePortraitPopup()">✖</span>
                     <img src="assets/images/portrait.png" alt="Portrait Image" class="popup-image">
                 </div>
-            </div>
+            </div> -->
             <div style="color: #0056A0;">
                 <img src="assets/images/info.jpg" alt="Info Image" height="16px" width="16px">
                 <b><u>Terms & conditions</u></b>
