@@ -554,31 +554,35 @@
                                 <img src="assets/images/coursebottom.png" alt="Uploaded Image" class="course-img">
                             </div>
                 
-                            <div class="buttons-container">
-                                <a href="assets/pdf/projects.pdf" target="_blank">
-                                    <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img large-btn">
+                            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+                                <!-- Download Syllabus Button (Centered) -->
+                                <a href="assets/pdf/projects.pdf" target="_blank" style="display: block;">
+                                    <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img large-btn" style="display: block; width: 100%; max-width: 300px;">
                                 </a>
-                                <!-- Know More Image Button -->
-                                <a href="meeting-details.html">
-                                    <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn">
-                                </a>
-                            </div>
-                
-                            <!-- Button to Trigger Portrait Popup -->
-                            <!-- <button class="build-apps-btn" onclick="openPortraitPopup()">Click here to build apps</button> -->
-                
-                            <!-- Portrait Popup -->
-                            <!-- <div id="portraitPopup" class="popup-overlay">
-                                <div class="popup-content">
-                                    <span class="close-btn" onclick="closePortraitPopup()">✖</span>
-                                    <img src="assets/images/coursepopupandroid.jpg" alt="Portrait Image" class="popup-image">
+                            
+                                <!-- Click More Button (Slightly Right in Laptop View) -->
+                                <div style="width: 100%; display: flex; justify-content: flex-end; padding-right: 10px;">
+                                    <a href="meeting-details.html">
+                                        <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn" style="display: block; width: 100%; max-width: 250px;">
+                                    </a>
                                 </div>
-                            </div> -->
-
-                            <div style="color: #0056A0;">
-                                <img src="assets/images/info.jpg" alt="Info Image" height="16px" width="16px" margin-left="10px">
-                                <b><u>Terms & conditions</u></b>
                             </div>
+                            
+                            <!-- Terms & Conditions (Left-Aligned) -->
+                            <div style="display: flex; align-items: center; justify-content: flex-start; width: 100%; max-width: 300px; margin-top: 10px;">
+                                <img src="assets/images/info.jpg" alt="Info Image" height="16px" width="16px" style="margin-right: 5px;">
+                                <b><u style="color: #0056A0;">Terms & Conditions</u></b>
+                            </div>
+                            
+                            <!-- Inline Media Query for Laptop View -->
+                            <style>
+                                @media (min-width: 1024px) { 
+                                    .know-more-img {
+                                        margin-right: -40px; /* Move slightly right in laptop view */
+                                    }
+                                }
+                            </style>
+                            
                 
                             <!-- CSS Styling -->
                             <style>
@@ -759,23 +763,35 @@
                 <img src="assets/images/coursebottom.png" alt="Uploaded Image 1">
             </div>
             
-            <div class="buttons-container">
-                <div class="text-end">
-                    <a href="assets/pdf/projects.pdf" target="_blank">
-                        <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img large-btn">
-                    </a>
-                </div>
-                <div class="text-end mt-2">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+                <!-- Download Syllabus Button (Centered) -->
+                <a href="assets/pdf/projects.pdf" target="_blank" style="display: block;">
+                    <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img large-btn" style="display: block; width: 100%; max-width: 300px;">
+                </a>
+            
+                <!-- Click More Button (Slightly Right in Laptop View) -->
+                <div style="width: 100%; display: flex; justify-content: flex-end; padding-right: 10px;">
                     <a href="meeting-details.html">
-                        <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn">
+                        <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn" style="display: block; width: 100%; max-width: 250px;">
                     </a>
                 </div>
             </div>
-
-            <div style="color: #0056A0;">
-                <img src="assets/images/info.jpg" alt="Info Image" height="16px" width="16px">
-                <b><u>Terms & conditions</u></b>
+            
+            <!-- Terms & Conditions (Left-Aligned) -->
+            <div style="display: flex; align-items: center; justify-content: flex-start; width: 100%; max-width: 300px; margin-top: 10px;">
+                <img src="assets/images/info.jpg" alt="Info Image" height="16px" width="16px" style="margin-right: 5px;">
+                <b><u style="color: #0056A0;">Terms & Conditions</u></b>
             </div>
+            
+            <!-- Inline Media Query for Laptop View -->
+            <style>
+                @media (min-width: 1024px) { 
+                    .know-more-img {
+                        margin-right: -40px; /* Move slightly right in laptop view */
+                    }
+                }
+            </style>
+            
         </div>
     </div>
 </div>
@@ -840,30 +856,35 @@
                 <img src="assets/images/coursebottom.png" alt="Uploaded Image 1">
             </div>
             
-            <div class="buttons-container">
-                <a href="assets/pdf/projects.pdf" target="_blank">
-                    <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img large-btn">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+                <!-- Download Syllabus Button (Centered) -->
+                <a href="assets/pdf/projects.pdf" target="_blank" style="display: block;">
+                    <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img large-btn" style="display: block; width: 100%; max-width: 300px;">
                 </a>
-                <!-- Know More Image Button -->
-                <a href="meeting-details.html">
-                    <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn">
-                </a>
-            </div>
-
-            <!-- Button to Trigger Portrait Popup -->
-            <!-- <button class="build-apps-btn" onclick="openPortraitPopup()">Click here to build apps</button> -->
-
-            <!-- Portrait Popup -->
-            <!-- <div id="portraitPopup" class="popup-overlay">
-                <div class="popup-content">
-                    <span class="close-btn" onclick="closePortraitPopup()">✖</span>
-                    <img src="assets/images/portrait.png" alt="Portrait Image" class="popup-image">
+            
+                <!-- Click More Button (Slightly Right in Laptop View) -->
+                <div style="width: 100%; display: flex; justify-content: flex-end; padding-right: 0px;">
+                    <a href="meeting-details.html">
+                        <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn" style="display: block; width: 100%; max-width: 250px;">
+                    </a>
                 </div>
-            </div> -->
-            <div style="color: #0056A0;">
-                <img src="assets/images/info.jpg" alt="Info Image" height="16px" width="16px">
-                <b><u>Terms & conditions</u></b>
             </div>
+            
+            <!-- Terms & Conditions (Left-Aligned) -->
+            <div style="display: flex; align-items: center; justify-content: flex-start; width: 100%; max-width: 300px; margin-top: 10px;">
+                <img src="assets/images/info.jpg" alt="Info Image" height="16px" width="16px" style="margin-right: 5px;">
+                <b><u style="color: #0056A0;">Terms & Conditions</u></b>
+            </div>
+            
+            <!-- Inline Media Query for Laptop View -->
+            <style>
+                @media (min-width: 1024px) { 
+                    .know-more-img {
+                        margin-right: -40px; /* Move slightly right in laptop view */
+                    }
+                }
+            </style>
+            
         </div>
     </div>
 </div>
