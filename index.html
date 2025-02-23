@@ -82,6 +82,7 @@
             display: flex;
             gap: 15px;
             margin-right: 25px;
+            margin-top: 5px;
         }
         .nav-links li:last-child {
     margin-right: 3px; /* Adjust this value as needed */
@@ -164,7 +165,7 @@
                 padding: 10px 0;
                 background-color: black;
                 position: absolute;
-                top: 60px;
+                top: 100px;
                 left: 0;
                 width: 100%;
             }
@@ -555,18 +556,18 @@
                               </div>
                   
                               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-                                  <!-- Download Syllabus Button (Centered) -->
-                                  <a href="assets/pdf/projects.pdf" target="_blank" style="display: block;">
-                                      <img src="assets/images/syllabus-button.png" alt="Download Syllabus" class="syllabus-img large-btn" style="display: block; width: 100%; max-width: 300px;">
-                                  </a>
-                              
-                                  <!-- Click More Button (Slightly Right in Laptop View) -->
-                                  <div style="width: 100%; display: flex; justify-content: flex-end;">
-                                      <a href="meeting-details.html" style="display: flex">
-                                          <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn" style="display: block; width: 100%; max-width: 250px;">
-                                      </a>
-                                  </div>
-                              </div>
+                                <!-- Download Syllabus Button (Centered) -->
+                                <a href="assets/pdf/projects.pdf" target="_blank" style="display: block;">
+                                    <img src="assets/images/syllabus-button.png" alt="Download Syllabus" class="syllabus-img large-btn" style="display: block; width: 100%; max-width: 300px;">
+                                </a>
+                            
+                                <!-- Click More Button (Slightly Right in Laptop View) -->
+                                <div style="width: 100%; display: flex; justify-content: flex-end; padding-right: 10px;">
+                                    <a href="meeting-details.html">
+                                        <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn" style="display: block; width: 100%; max-width: 250px;">
+                                    </a>
+                                </div>
+                            </div>
                               
                               <!-- Terms & Conditions (Left-Aligned) -->
                               <div style="display: flex; align-items: center; justify-content: flex-start; width: 100%; max-width: 300px; margin-top: 10px;">
@@ -858,18 +859,18 @@
               </div>
               
               <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-                  <!-- Download Syllabus Button (Centered) -->
-                  <a href="assets/pdf/projects.pdf" target="_blank" style="display: block;">
-                      <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img large-btn" style="display: block; width: 100%; max-width: 300px;">
-                  </a>
-              
-                  <!-- Click More Button (Slightly Right in Laptop View) -->
-                  <div style="width: 100%; display: flex; justify-content: flex-end; padding-right: 0px;">
-                      <a href="meeting-details.html">
-                          <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn" style="display: block; width: 100%; max-width: 250px;">
-                      </a>
-                  </div>
-              </div>
+                <!-- Download Syllabus Button (Centered) -->
+                <a href="assets/pdf/projects.pdf" target="_blank" style="display: block;">
+                    <img src="assets/images/moreprojects.png" alt="Download Syllabus" class="syllabus-img large-btn" style="display: block; width: 100%; max-width: 300px;">
+                </a>
+            
+                <!-- Click More Button (Slightly Right in Laptop View) -->
+                <div style="width: 100%; display: flex; justify-content: flex-end; padding-right: 10px;">
+                    <a href="meeting-details.html">
+                        <img src="assets/images/KnowMore.png" alt="Know More" class="know-more-img small-btn" style="display: block; width: 100%; max-width: 250px;">
+                    </a>
+                </div>
+            </div>
               
               <!-- Terms & Conditions (Left-Aligned) -->
               <div style="display: flex; align-items: center; justify-content: flex-start; width: 100%; max-width: 300px; margin-top: 10px;">
@@ -981,10 +982,13 @@
   <style>
   .meeting-item {
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     text-align: center;
+    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .thumb img {
     width: 100%;
@@ -994,9 +998,9 @@
   /* Styling for the syllabus image button */
   .syllabus-img {
       width: 100%; /* Makes it responsive */
-      max-width: 250px; /* Ensures it does not get too large */
+      max-width: 100px; /* Ensures it does not get too large */
       display: block;
-      margin: 10px auto; /* Centers it */
+      margin: 20px auto; /* Centers it */
       transition: transform 0.3s ease-in-out;
       cursor: pointer;
   }
