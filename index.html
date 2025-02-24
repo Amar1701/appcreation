@@ -239,7 +239,7 @@
 
     <!-- HERO SECTION (DESKTOP) -->
     <section class="hero">
-        <img src="assets/images/AppCreation.png" alt="Website Banner" class="desktop-image">
+        <img src="assets/images/HomePage.png" alt="Website Banner" class="desktop-image">
         <img src="assets/images/frontpage.png" alt="Mobile Banner" class="mobile-image">
     </section>
 
@@ -848,8 +848,16 @@
           <div class="down-content">
               <!-- Image Button to Open Popup -->
               <a href="javascript:void(0);" onclick="openPopup()">
-                  <img src="assets/images/BookDemoClassButton.png" alt="Click for Demo" class="demo-btn" height="35px">
-              </a>
+                <img src="assets/images/BookDemoClassButton.png" alt="Click for Demo" class="demo-btn" height="50px" width="auto">
+            </a>
+<style>
+    .demo-btn {
+    height: 40px;
+    width: auto;
+    margin-left: 60px;
+}
+
+</style>            
               <img src="assets/images/class.png" alt="Additional Image" class="img-fluid mt-2">
               
   
@@ -1603,7 +1611,7 @@
         }
 
         .responsive-image {
-            width: 100%;
+            width: 120%;
             max-width: 1630px;
             height: auto;
             border-radius: 10px;
@@ -1613,6 +1621,7 @@
         /* Mobile Image Visibility */
         .mobile-image {
             display: none;
+            max-width: 900px;
         }
 
         /* Responsive Image Swapping */
@@ -1622,6 +1631,7 @@
             }
             .mobile-image {
                 display: block;
+                max-width: 900px;
             }
         }
     </style>
