@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         * {
@@ -198,9 +198,38 @@
     <!-- TOP NAVBAR -->
     <div class="top-bar">
         <div class="contact-info">
-            <span><i class="fas fa-phone-alt"></i> <i class="fab fa-whatsapp"></i> +91 7780518732 </span>
-            <span><i class="fas fa-envelope"></i> contact@appcreationtechnologies.in</span>
+            <span>
+                <a href="tel:+917780518732">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://wa.me/917780518732?text=Hi%2C%20" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                +91 7780518732
+            </span>
+            <span>
+                <a href="mailto:contact@appcreationtechnologies.in">
+                    <i class="fas fa-envelope"></i> contact@appcreationtechnologies.in
+                </a>
+            </span>
         </div>
+<style>
+    .contact-info a {
+    color: white; /* Ensure all links are white */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-info a:visited {
+    color: white; /* Ensure visited links stay white */
+}
+
+.contact-info a:hover {
+    color: #ddd; /* Slight hover effect for better UX */
+}
+
+</style>        
+        
+        
         <div class="social-media">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -239,8 +268,8 @@
 
     <!-- HERO SECTION (DESKTOP) -->
     <section class="hero">
-        <img src="assets/images/deskcover.png" alt="Website Banner" class="desktop-image">
-        <img src="assets/images/mobcover.png" alt="Mobile Banner" class="mobile-image">
+        <img src="assets/images/webimh.png" alt="Website Banner" class="desktop-image">
+        <img src="assets/images/mobimg.png" alt="Mobile Banner" class="mobile-image">
     </section>
 
       <!-- BUTTON SECTION -->
@@ -534,8 +563,8 @@
                               <div class="price">
                                   <span>ANDROID APPS TRAINING</span>
                               </div>
-                              <a href="meeting-details.html">
-                                  <img src="assets/images/ard.png" alt="iOS Development">
+                              <!-- <a href="meeting-details.html"> -->
+                                  <img src="assets/images/acourse.png" alt="iOS Development">
                               </a>
                               
                           </div>
@@ -544,7 +573,7 @@
                               <a href="javascript:void(0);" onclick="openPopup()">
                                   <img src="assets/images/BookDemoClassButton.png" alt="Click for Demo" class="demo-btn" height="35px">
                               </a>
-                              <img src="assets/images/14.png" alt="Additional Image" class="img-fluid mt-2">
+                              <img src="assets/images/project1.png" alt="Additional Image" class="img-fluid mt-2">
   
                   
                               <!-- Popup Modal -->
@@ -750,7 +779,7 @@
                   <span>IOS APPS TRAINING</span>
               </div>
               <a href="ios.html">
-                  <img src="assets/images/iOS.png" alt="iOS Development">
+                  <img src="assets/images/bcourse.png" alt="iOS Development">
               </a>
           </div>
           <div class="down-content">
@@ -758,7 +787,7 @@
               <a href="javascript:void(0);" onclick="openPopup()">
                   <img src="assets/images/BookDemoClassButton.png" alt="Click for Demo" class="demo-btn" height="35px">
               </a>
-              <img src="assets/images/13.png" alt="Additional Image" class="img-fluid mt-2">
+              <img src="assets/images/project1.png" alt="Additional Image" class="img-fluid mt-2">
               
               <!-- Popup Modal -->
               <div id="demoPopup" class="popup-overlay">
@@ -842,7 +871,7 @@
                   <span>LIVE PROJECTS TRAINING</span>
               </div>
               <a href="ios.html">
-                  <img src="assets/images/prjt.png" alt="iOS Development">
+                  <img src="assets/images/ccourse.png" alt="iOS Development">
               </a>
           </div>
           <div class="down-content">
@@ -858,7 +887,7 @@
 }
 
 </style>            
-              <img src="assets/images/15.png" alt="Additional Image" class="img-fluid mt-2">
+              <img src="assets/images/project2.png" alt="Additional Image" class="img-fluid mt-2">
               
   
               <!-- Popup Modal -->
@@ -1794,7 +1823,7 @@
 
     <!-- Image Container with Different Images for Mobile & Desktop -->
     <div class="image-container">
-        <img src="assets/images/ProjectPage.png" alt="Project Info" class="responsive-image desktop-image">
+        <img src="assets/images/crse.png" alt="Project Info" class="responsive-image desktop-image">
         <img src="assets/images/Detail.png" alt="Project Info" class="responsive-image mobile-image">
     </div>
 </body>
@@ -1964,6 +1993,60 @@
     // Run when window resizes
     window.addEventListener("resize", updateEmoji);
   </script> -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Button</title>
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            text-decoration: none;
+        }
+        
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-button img {
+            width: 35px;
+            height: 35px;
+        }
+        
+        @media (max-width: 600px) {
+            .whatsapp-button {
+                width: 50px;
+                height: 50px;
+            }
+            .whatsapp-button img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank"> -->
+        <a href="https://wa.me/917780518732?text=Hi%2C%20" class="whatsapp-button" target="_blank">
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+</body>
+</html>
   
   
  
